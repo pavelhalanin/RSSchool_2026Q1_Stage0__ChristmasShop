@@ -79,3 +79,68 @@ body {
     /* border: 1px solid rgb(255,70,70, 0.1); */
     color: var(--color-primary);
 }
+
+/* cs_main_hero_section */
+
+.cs_main_hero_section {
+    background-color: var(--color-primary);
+    background-image: url('./assets/home-page/hero-section/bg-ball-1.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 120px 0;
+}
+
+.cs_main_hero_section__caption {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-family: Allura;
+    color: white;
+    font-weight: 400;
+}
+
+.cs_main_hero_section__header {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cs_main_hero_section__header>div {
+    margin: 0 auto;
+    width: 426px;
+}
+
+.cs_main_hero_section__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cs_main_hero_section__button button {
+    padding: 20px 32px;
+    background-color: #181C29;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    width: 235px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
