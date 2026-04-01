@@ -9,6 +9,11 @@ body {
     margin: 0;
 }
 
+:root {
+    --color-primary: #ff4646;
+    --color-primary-opacity-10: rgb(255, 70, 70, 0.1);
+}
+
 .cs_header {
     height: 64px;
 }
@@ -67,9 +72,10 @@ body {
     /* border: 1px dashed green; */
 }
 
-.cs_header__nav>ul>li>a:hover {
-    background-color: rgb(255, 70, 70, 0.1);
+.cs_header__nav>ul>li>a:hover,
+.cs_header__nav>ul>li>a.--active {
+    background-color: var(--color-primary-opacity-10);
     border-radius: 12px;
     /* border: 1px solid rgb(255,70,70, 0.1); */
-    color: #ff4646;
+    color: var(--color-primary);
 }
