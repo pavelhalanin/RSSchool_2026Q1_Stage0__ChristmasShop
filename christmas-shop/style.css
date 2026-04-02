@@ -11,8 +11,97 @@ body {
 
 :root {
     --color-primary: #ff4646;
-    --color-primary-opacity-10: rgb(255, 70, 70, 0.1);
+    --color-primary-10: rgb(255, 70, 70, 0.1);
+    --color-dark: #181C29;
+    --color-static-white: #ffffff;
+    --color-static-white-40: rgba(255, 255, 255, 0.4);
+    --color-static-white-20: rgba(255, 255, 255, 0.2);
+    --color-static-tag-purple: #4361FF;
+    --color-static-tag-purple: #FF43F7;
+    --color-static-tag-green: #06A44F;
+    --color-content-backgroud: #ECF3F8;
+    --color-overlay: rgba(24, 28, 41, 0.8);
 }
+
+/* Typography */
+
+.typography--header-1 {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 18%;
+    text-transform: uppercase;
+}
+
+.typography--header-2 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 16%;
+    text-transform: uppercase;
+}
+
+.typography--header-3 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+}
+
+.typography--header-4 {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+}
+
+.typography--paragraph {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 148%;
+}
+
+.typography--action-large {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 16%;
+    text-transform: uppercase;
+}
+
+.typography--action-small {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+}
+
+.typography--caption {
+    font-family: Allura;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 5%;
+}
+
+.typography--slider-text {
+    font-family: Montserrat;
+    font-size: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* cs_header */
 
 .cs_header {
     height: 64px;
@@ -30,8 +119,6 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-family: Montserrat;
-    text-transform: uppercase;
 }
 
 .cs_header__logo>img {
@@ -55,7 +142,6 @@ body {
 .cs_header__nav>ul>li>a {
     text-decoration: none;
     color: black;
-    font-family: Montserrat;
 
     display: flex;
     padding: 12px 20px;
@@ -74,7 +160,7 @@ body {
 
 .cs_header__nav>ul>li>a:hover,
 .cs_header__nav>ul>li>a.--active {
-    background-color: var(--color-primary-opacity-10);
+    background-color: var(--color-primary-10);
     border-radius: 12px;
     /* border: 1px solid rgb(255,70,70, 0.1); */
     color: var(--color-primary);
@@ -98,25 +184,18 @@ body {
 .cs_main_hero_section__caption {
     width: 100%;
     text-align: center;
-    font-size: 24px;
-    font-family: Allura;
     color: white;
-    font-weight: 400;
 }
 
 .cs_main_hero_section__header {
-    width: 100%;
+    width: 436px;
+    margin: 0 auto;
     text-align: center;
-    font-size: 32px;
     color: white;
-    font-family: Montserrat;
-    font-weight: 600;
-    text-transform: uppercase;
 }
 
-.cs_main_hero_section__header>div {
-    margin: 0 auto;
-    width: 426px;
+.cs_main_hero_section__header>h1 {
+    margin: 0;
 }
 
 .cs_main_hero_section__button {
@@ -132,17 +211,7 @@ body {
     border: none;
     color: white;
     border-radius: 20px;
-    width: 235px;
-    height: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: Montserrat;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 600;
+    display: block;
 }
 
 /* cs_footer */
@@ -180,16 +249,14 @@ body {
 
 .cs_footer__rights {
     width: 100%;
-    font-family: Montserrat;
     text-align: center;
-    font-size: 16px;
-    font-weight: 400;
+}
+
+.cs_footer__rights > p {
+    margin: 0;
 }
 
 .cs_footer__made {
     width: 100%;
-    font-family: Allura;
     text-align: center;
-    font-size: 24px;
-    font-weight: 400;
 }
