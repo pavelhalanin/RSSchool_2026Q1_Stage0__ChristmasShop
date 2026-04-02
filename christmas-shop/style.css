@@ -23,6 +23,17 @@ body {
     --color-overlay: rgba(24, 28, 41, 0.8);
 }
 
+.cs__wrapper {
+    background-image: url('./assets/home-page/bg-snow.png');
+    background-repeat: no-repeat;
+    background-color: var(--color-primary);
+}
+
+.cs__container {
+    max-width: 1276px;
+    margin: 0 auto;
+}
+
 /* Typography */
 
 .typography--header-1 {
@@ -252,11 +263,60 @@ body {
     text-align: center;
 }
 
-.cs_footer__rights > p {
+.cs_footer__rights>p {
     margin: 0;
 }
 
 .cs_footer__made {
     width: 100%;
     text-align: center;
+}
+
+/* cs_about_section */
+
+.cs_about_section__container {
+    padding: 60px 0;
+}
+
+.cs_about_section {
+    display: flex;
+    border-radius: 20px;
+    background-color: var(--color-static-white);
+}
+
+.cs_about_section__text {
+    width: 100%;
+    padding: 0 60px;
+
+    display: flex;
+    align-items: center;
+}
+
+.cs_about_section__text>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 426px;
+}
+
+.cs_about_section__text>div>div,
+.cs_about_section__text>div>p {
+    width: 100%;
+}
+
+.cs_about_section__text>div>p {
+    margin: 0;
+}
+
+.cs_about_section__caption {
+    color: var(--color-primary)
+}
+
+.cs_about_section__image {
+    width: 100%;
+    background-image: url('./assets/home-page/about-section/santa.png');
+    background-repeat: no-repeat;
+    max-width: 638px;
+    height: 528px;
+    border-radius: 20px;
 }
