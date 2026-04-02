@@ -1,4 +1,6 @@
-task: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/christmas-shop/christmas-shop-part1.md
+[task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/christmas-shop/christmas-shop-part1.md)
+
+[figma](https://www.figma.com/design/zTB01BwWZVoXYK5atH3eZT/Cristmas-Shop)
 
 ### CrossCheck Criteria (110 points)
 
