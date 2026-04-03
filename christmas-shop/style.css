@@ -182,8 +182,10 @@ body {
 .cs_main_hero_section {
     background-color: var(--color-primary);
     background-image: url('./assets/home-page/hero-section/bg-ball-1.png');
+    background-size: cover;
+    background-position: center center;
+
     background-repeat: no-repeat;
-    background-position: top center;
     margin: 0 auto;
 
     display: flex;
