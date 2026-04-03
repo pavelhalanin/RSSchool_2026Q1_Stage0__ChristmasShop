@@ -229,6 +229,18 @@ body {
     display: block;
 }
 
+/* cs_main_contacts_section */
+
+.cs_main_contacts_section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cs_main_contacts_section>div {
+    background-color: rgba(236, 243, 248, 1);
+    border-radius: 20px;
+}
+
 /* cs_footer */
 
 .cs_footer {
