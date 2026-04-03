@@ -165,16 +165,18 @@ body {
     overflow: hidden;
 
     transition: all 0.5s ease;
-    /* background-color: rgba(6, 164, 79, 0.1); */
-    /* border: 1px dashed green; */
+    border: 1px dashed transparent;
 }
 
-.cs_header__nav>ul>li>a:hover,
-.cs_header__nav>ul>li>a.--active {
+.cs_header__nav>ul>li>a:hover {
     background-color: var(--color-primary-10);
     border-radius: 12px;
-    /* border: 1px solid rgb(255,70,70, 0.1); */
     color: var(--color-primary);
+}
+
+.cs_header__nav>ul>li>a:active {
+    background-color: rgba(6, 164, 79, 0.1);
+    border: 1px dashed green;
 }
 
 /* cs_main_hero_section */
