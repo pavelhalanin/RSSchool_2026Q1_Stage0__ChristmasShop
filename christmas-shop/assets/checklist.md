@@ -9,17 +9,17 @@
      - Valid markup of checked page corresponds to the message _"Document checking completed. No errors or warnings to show."_ In this case, we assign the full points for the checked page (+6).
      - If there are `warnings` but no `errors`, we assign half of the points (+3) for the checked page
    - [ ] Favicon is added to each page: **+2**
-   - [ ] Only one `<h1>` per each page: **+2**
+   - [x] Only one `<h1>` per each page: **+2**
    - [ ] The URL of the `Gifts` page differs from the URL of the `Home` page (e.g. `your-site.com` for the `Home` page and `your-site.com/gifts` for the `Gifts` page): **+2**
 2. The layout matches the design: **+46**
-   - [ ] `<header>` on each page: **+4**
-   - [ ] `Hero` section on `Home` page: **+6**
-   - [ ] `About` section on `Home` page: **+6**
+   - [x] `<header>` on each page: **+4**
+   - [x] `Hero` section on `Home` page: **+6**
+   - [x] `About` section on `Home` page: **+6**
    - [ ] `Slider` section on `Home` page: **+6**
    - [ ] `Best Gifts` section on `Home` page: **+6**
    - [ ] `CTA` section on `Home` page: **+6**
    - [ ] `Gifts` section on `Gifts` page: **+6**
-   - [ ] `<footer>` on each page: **+6**
+   - [x] `<footer>` on each page: **+6**
 3. CSS Requirements: **+10**
    - [ ] For positioning gifts in `Best Gifts` section on `Home` page and gifts in `Gifts` section on `Gifts` page used **Flexbox** or **Grid Layout**: **+4**
    - [ ] When scaling the browser page (<100%) or increasing the page width (>1440px), the layout of both pages is centered rather than shifted to the side and not stretched across the entire width: **+4**
