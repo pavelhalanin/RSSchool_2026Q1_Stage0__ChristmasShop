@@ -324,7 +324,7 @@ body {
 /* cs_footer_contacts__content */
 
 .cs_footer_contacts__section {
-    padding-bottom: 60px;
+    padding: 60px 0;
 }
 
 .cs_footer_contacts__content>ul {
