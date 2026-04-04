@@ -33,9 +33,9 @@
    - [ ] When clicking on the **Logo** in `<header>`, it navigates to the `Home` page: **+2**
    - [ ] The active **ALL** tab in `Gifts` section of `Gifts` page is non-interactive and don't have a hover effects: **+2**
    - [ ] Each Gift-card in the `Gifts` section of the `Gifts` page, `Best Gifts` section on `Home` page and cards in `<footer>` is interactive when hovering over any area of the card: **+6**
-   - [ ] In the `<footer>`, clicking on the card **CALL US** should initiate a phone call: **+2**
-   - [ ] In the `<footer>`, clicking on the card **WRITE US** should open the mail client: **+2**
-   - [ ] In the `<footer>`, clicking on the card **MAGIC FOREST** should open a new browser tab with Google Maps displaying any location of your choice: **+2**
+   - [x] In the `<footer>`, clicking on the card **CALL US** should initiate a phone call: **+2**
+   - [x] In the `<footer>`, clicking on the card **WRITE US** should open the mail client: **+2**
+   - [x] In the `<footer>`, clicking on the card **MAGIC FOREST** should open a new browser tab with Google Maps displaying any location of your choice: **+2**
    - [x] In the `<footer>`, clicking on the link **Made in Rolling Scopes School** should open the [school's website](https://rs.school/) in a new tab: **+2**
    - [ ] Interactivity of the links and buttons is implemented according to the Figma layout. Interactivity includes not only changing cursor's appearance, for example, using the `cursor: pointer` property, but also the use of other visual effects, such as changing the background color or font color, following the **Styleguide** in the Figma layout. If the interactivity is not specified in the **Styleguide**, `cursor: pointer` property is enough: **+4**
    - [ ] Mandatory requirement for interactivity: smooth change in the appearance of an element on hover, without affecting adjacent elements: **+2**
