@@ -24,6 +24,11 @@ body {
     --color-tag-purple: #4361FF;
     --color-tag-green: #06A44F;
     --color-tag-pink: #FF43F7;
+    --url-cursor: url(./assets/cursor/pointinghand.svg);
+}
+
+a {
+    cursor: var(--url-cursor), pointer;
 }
 
 .cs__wrapper {
@@ -68,7 +73,7 @@ body {
 }
 
 .cs__primary_button:hover {
-    cursor: pointer;
+    cursor: var(--url-cursor), pointer;
     background-color: var(--color-static-white);
     color: var(--color-dark);
 }
@@ -186,10 +191,11 @@ body {
 
 .cs_header__logo>a:hover {
     cursor: pointer;
+    cursor: var(--url-cursor), pointer;
 }
 
 .cs_header__logo>a:active {
-    cursor: pointer;
+    cursor: var(--url-cursor), pointer;
     /* border: 1px dashed #06A44F; */
     /* border-radius: 4px; */
     /* background-color: rgba(6, 164, 79, 0.1); */
@@ -232,14 +238,14 @@ body {
 }
 
 .cs_header__nav>ul>li>a:hover {
-    cursor: pointer;
+    cursor: var(--url-cursor), pointer;
     background-color: var(--color-primary-10);
     border-radius: 12px;
     color: var(--color-primary);
 }
 
 .cs_header__nav>ul>li>a:active {
-    cursor: pointer;
+    cursor: var(--url-cursor), pointer;
     /* background-color: rgba(6, 164, 79, 0.1); */
     /* border: 1px dashed green; */
 }
