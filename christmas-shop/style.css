@@ -306,10 +306,14 @@ body {
 
 .cs_main_best_section>div>ul>li>div:last-child {
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
 }
 
 .cs_main_best_section>div>ul>li h4,
 .cs_main_best_section>div>ul>li h3 {
+    width: 100%;
     margin: 0;
 }
 
