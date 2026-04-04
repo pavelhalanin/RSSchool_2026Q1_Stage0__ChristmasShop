@@ -8,7 +8,7 @@
    - [ ] The layout for both pages is validated and error-free according to the W3C Validator (https://validator.w3.org/): **+12** (6 points per page)
      - Valid markup of checked page corresponds to the message _"Document checking completed. No errors or warnings to show."_ In this case, we assign the full points for the checked page (+6).
      - If there are `warnings` but no `errors`, we assign half of the points (+3) for the checked page
-   - [ ] Favicon is added to each page: **+2**
+   - [x] Favicon is added to each page: **+2**
    - [x] Only one `<h1>` per each page: **+2**
    - [ ] The URL of the `Gifts` page differs from the URL of the `Home` page (e.g. `your-site.com` for the `Home` page and `your-site.com/gifts` for the `Gifts` page): **+2**
 2. The layout matches the design: **+46**
