@@ -10,23 +10,23 @@
      - If there are `warnings` but no `errors`, we assign half of the points (+3) for the checked page
    - [x] Favicon is added to each page: **+2**
    - [x] Only one `<h1>` per each page: **+2**
-   - [ ] The URL of the `Gifts` page differs from the URL of the `Home` page (e.g. `your-site.com` for the `Home` page and `your-site.com/gifts` for the `Gifts` page): **+2**
+   - [x] The URL of the `Gifts` page differs from the URL of the `Home` page (e.g. `your-site.com` for the `Home` page and `your-site.com/gifts` for the `Gifts` page): **+2**
 2. The layout matches the design: **+46**
    - [x] `<header>` on each page: **+4**
    - [x] `Hero` section on `Home` page: **+6**
    - [x] `About` section on `Home` page: **+6**
    - [ ] `Slider` section on `Home` page: **+6**
-   - [ ] `Best Gifts` section on `Home` page: **+6**
+   - [x] `Best Gifts` section on `Home` page: **+6**
    - [ ] `CTA` section on `Home` page: **+6**
    - [ ] `Gifts` section on `Gifts` page: **+6**
    - [x] `<footer>` on each page: **+6**
 3. CSS Requirements: **+10**
-   - [ ] For positioning gifts in `Best Gifts` section on `Home` page and gifts in `Gifts` section on `Gifts` page used **Flexbox** or **Grid Layout**: **+4**
+   - [x] For positioning gifts in `Best Gifts` section on `Home` page and gifts in `Gifts` section on `Gifts` page used **Flexbox** or **Grid Layout**: **+4**
    - [ ] When scaling the browser page (<100%) or increasing the page width (>1440px), the layout of both pages is centered rather than shifted to the side and not stretched across the entire width: **+4**
    - [ ] The empty spaces around the layout are filled with white color: **+2**
 4. Interactivity: **+36**
    - [ ] Navigation elements (except `CONTACTS`) lead to corresponding sections on `Home` page: **+4**
-   - [ ] `CONTACTS` in navigation panel links to the `<footer>` on its own page: **+2**
+   - [x] `CONTACTS` in navigation panel links to the `<footer>` on its own page: **+2**
    - [ ] Smooth scrolling with anchor links: **+2**
    - [ ] When clicking on the **GIFTS** link in `<header>` and **Explore Magical Gifts** button in `Hero` and `CTA` sections on `Home` page, it navigates to the `Gifts` page: **+2**
    - [ ] The **GIFTS** link in `<header>` on `Gifts` page is non-interactive and don't have a hover effects: **+2**
