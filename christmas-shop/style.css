@@ -35,12 +35,6 @@ a {
     cursor: var(--url-cursor), pointer;
 }
 
-.cs__wrapper {
-    background-image: url('./assets/home-page/bg-snow.png');
-    background-repeat: no-repeat;
-    background-color: var(--color-primary);
-}
-
 .cs__container {
     max-width: 1276px;
     margin: 0 auto;
@@ -260,16 +254,21 @@ a {
     /* border: 1px dashed green; */
 }
 
+/* cs_main */
+
+.cs_main {
+    background-color: var(--color-primary);
+    max-width: 1440px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
 /* cs_main_hero_section */
 
 .cs_main_hero_section {
-    background-color: var(--color-primary);
-    background-image: url('./assets/home-page/hero-section/bg-ball-1.png');
-    background-size: cover;
+    background-image: url('./assets/home-page/hero-section/bg-ball-1.png'), url('./assets/home-page/bg-snow.png');
     background-position: center center;
-
-    background-repeat: no-repeat;
-    margin: 0 auto;
+    background-size: cover;
 
     display: flex;
     flex-wrap: wrap;
@@ -300,18 +299,86 @@ a {
     justify-content: center;
 }
 
+/* cs_about_section */
+
+.cs_about_section {
+    background-image: url('./assets/home-page/bg-snow.png');
+    background-position: center center;
+    background-size: cover;
+
+    max-width: 1276px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.cs_about_section__wrapper {
+    display: flex;
+    border-radius: 20px;
+    background-color: var(--color-static-white);
+}
+
+@media screen and (max-width: 1276px) {
+    .cs_about_section {
+        max-width: 752px;
+    }
+}
+
+@media screen and (max-width: 752px) {
+    .cs_about_section {
+        max-width: 364px;
+    }
+
+    .cs_about_section__wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+.cs_about_section__text {
+    width: 100%;
+    padding: 0 60px;
+
+    display: flex;
+    align-items: center;
+}
+
+.cs_about_section__text>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 426px;
+}
+
+.cs_about_section__text>div>div,
+.cs_about_section__text>div>p {
+    width: 100%;
+}
+
+.cs_about_section__text>div>p {
+    margin: 0;
+}
+
+.cs_about_section__caption {
+    color: var(--color-primary)
+}
+
+.cs_about_section__image {
+    width: 100%;
+    background-image: url('./assets/home-page/about-section/santa.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    max-width: 638px;
+    height: 528px;
+    border-radius: 20px;
+}
+
 /* cs_main_slider_section */
 
 .cs_main_slider_section {
     background-image: url('./assets/home-page/bg-snow.png');
-    background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-
-    background-color: var(--color-primary);
+    background-size: cover;
 
     padding: 60px 0;
-
     color: var(--color-static-white)
 }
 
@@ -401,9 +468,10 @@ a {
 /* cs_main_best_section */
 
 .cs_main_best_section {
-    background-image: url(./assets/home-page/bg-snow.png);
-    background-repeat: no-repeat;
-    background-color: var(--color-primary);
+    background-image: url('./assets/home-page/bg-snow.png');
+    background-position: center center;
+    background-size: cover;
+
     padding: 60px 0;
 }
 
@@ -483,11 +551,8 @@ a {
 
 .cs_main_cta_section {
     background-image: url(./assets/home-page/cta-section/bg-forest.png), url('./assets/home-page/bg-snow.png');
-    background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-
-    background-color: var(--color-primary);
+    background-size: cover;
 
     color: var(--color-static-white);
     padding: 60px 0;
@@ -501,6 +566,7 @@ a {
 
 .cs_main_cta_section__container>h2 {
     margin: 0;
+    padding-top: 60px;
 }
 
 .cs_main_cta_section__button_container {
@@ -512,8 +578,7 @@ a {
 .cs_main_cta_section__time {
     display: flex;
     justify-content: center;
-
-    padding-top: 8px;
+    padding: 8px 0 60px 0;
 }
 
 .cs_main_cta_section__time>ul {
@@ -641,53 +706,4 @@ a {
     align-items: center;
     width: 40px;
     height: 40px;
-}
-
-/* cs_about_section */
-
-.cs_about_section__container {
-    padding: 60px 0;
-}
-
-.cs_about_section {
-    display: flex;
-    border-radius: 20px;
-    background-color: var(--color-static-white);
-}
-
-.cs_about_section__text {
-    width: 100%;
-    padding: 0 60px;
-
-    display: flex;
-    align-items: center;
-}
-
-.cs_about_section__text>div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 426px;
-}
-
-.cs_about_section__text>div>div,
-.cs_about_section__text>div>p {
-    width: 100%;
-}
-
-.cs_about_section__text>div>p {
-    margin: 0;
-}
-
-.cs_about_section__caption {
-    color: var(--color-primary)
-}
-
-.cs_about_section__image {
-    width: 100%;
-    background-image: url('./assets/home-page/about-section/santa.png');
-    background-repeat: no-repeat;
-    max-width: 638px;
-    height: 528px;
-    border-radius: 20px;
 }

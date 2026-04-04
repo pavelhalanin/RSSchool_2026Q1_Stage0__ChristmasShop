@@ -22,10 +22,10 @@
    - [x] `<footer>` on each page: **+6**
 3. CSS Requirements: **+10**
    - [x] For positioning gifts in `Best Gifts` section on `Home` page and gifts in `Gifts` section on `Gifts` page used **Flexbox** or **Grid Layout**: **+4**
-   - [ ] When scaling the browser page (<100%) or increasing the page width (>1440px), the layout of both pages is centered rather than shifted to the side and not stretched across the entire width: **+4**
-   - [ ] The empty spaces around the layout are filled with white color: **+2**
+   - [x] When scaling the browser page (<100%) or increasing the page width (>1440px), the layout of both pages is centered rather than shifted to the side and not stretched across the entire width: **+4**
+   - [x] The empty spaces around the layout are filled with white color: **+2**
 4. Interactivity: **+36**
-   - [ ] Navigation elements (except `CONTACTS`) lead to corresponding sections on `Home` page: **+4**
+   - [x] Navigation elements (except `CONTACTS`) lead to corresponding sections on `Home` page: **+4**
    - [x] `CONTACTS` in navigation panel links to the `<footer>` on its own page: **+2**
    - [x] Smooth scrolling with anchor links: **+2**
    - [x] When clicking on the **GIFTS** link in `<header>` and **Explore Magical Gifts** button in `Hero` and `CTA` sections on `Home` page, it navigates to the `Gifts` page: **+2**
