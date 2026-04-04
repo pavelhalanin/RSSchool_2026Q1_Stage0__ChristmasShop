@@ -580,6 +580,16 @@ a {
     padding: 20px;
 }
 
+@media screen and (max-width: 1060px) {
+    .cs_footer_contacts__content>ul {
+        flex-wrap: wrap;
+    }
+
+    .cs_footer_contacts__content>ul>li {
+        width: 100%;
+    }
+}
+
 .cs_footer_contacts__content>ul>li>a {
     text-decoration: none;
     color: var(--color-dark);
