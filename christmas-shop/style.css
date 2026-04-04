@@ -34,6 +34,18 @@ body {
     margin: 0 auto;
 }
 
+.cs__text_center {
+    text-align: center;
+}
+
+.cs__w100 {
+    width: 100%;
+}
+
+.cs__m0 {
+    margin: 0;
+}
+
 /* Typography */
 
 .typography--header-1 {
@@ -229,16 +241,28 @@ body {
     display: block;
 }
 
-/* cs_main_contacts_section */
+/* cs_footer_contacts__content */
 
-.cs_main_contacts_section {
-    display: flex;
-    flex-wrap: wrap;
+.cs_footer_contacts__section {
+    padding-bottom: 60px;
 }
 
-.cs_main_contacts_section>div {
+.cs_footer_contacts__content>ul {
+    display: flex;
+    gap: 12px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.cs_footer_contacts__content>ul>li {
+    list-style-type: none;
     background-color: rgba(236, 243, 248, 1);
     border-radius: 20px;
+
+    display: block;
+    width: calc(100% / 3);
+    padding: 20px;
 }
 
 /* cs_footer */
@@ -247,6 +271,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    padding-bottom: 60px;
 }
 
 .cs_footer__socials {
@@ -272,20 +297,6 @@ body {
     align-items: center;
     width: 40px;
     height: 40px;
-}
-
-.cs_footer__rights {
-    width: 100%;
-    text-align: center;
-}
-
-.cs_footer__rights>p {
-    margin: 0;
-}
-
-.cs_footer__made {
-    width: 100%;
-    text-align: center;
 }
 
 /* cs_about_section */
