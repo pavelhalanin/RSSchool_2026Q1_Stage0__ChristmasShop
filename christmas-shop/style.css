@@ -49,6 +49,10 @@ body {
     margin: 0;
 }
 
+.cs__text_decoration_none {
+    text-decoration: none;
+}
+
 /* Typography */
 
 .typography--header-1 {
@@ -352,6 +356,10 @@ body {
     flex-wrap: wrap;
     gap: 12px;
     padding-bottom: 60px;
+}
+
+.cs_footer a {
+    color: black;
 }
 
 .cs_footer__socials {
