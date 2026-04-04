@@ -655,7 +655,6 @@ a {
 
     display: block;
     width: calc(100% / 3);
-    padding: 20px;
 }
 
 @media screen and (max-width: 1060px) {
@@ -669,8 +668,18 @@ a {
 }
 
 .cs_footer_contacts__content>ul>li>a {
+    display: block;
+    padding: 20px;
+
     text-decoration: none;
+
+    transition: all 0.5s ease;
     color: var(--color-dark);
+}
+
+.cs_footer_contacts__content>ul>li>a:hover {
+    cursor: var(--url-cursor), pointer;
+    color: var(--color-primary);
 }
 
 /* cs_footer */
@@ -683,7 +692,13 @@ a {
 }
 
 .cs_footer a {
-    color: black;
+    color: var(--color-dark);
+    transition: all 0.5s ease;
+}
+
+.cs_footer a:hover {
+    cursor: var(--url-cursor), pointer;
+    color: var(--color-primary);
 }
 
 .cs_footer__socials {
