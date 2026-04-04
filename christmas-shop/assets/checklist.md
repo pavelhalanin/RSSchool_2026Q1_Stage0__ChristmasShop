@@ -30,7 +30,7 @@
    - [ ] Smooth scrolling with anchor links: **+2**
    - [x] When clicking on the **GIFTS** link in `<header>` and **Explore Magical Gifts** button in `Hero` and `CTA` sections on `Home` page, it navigates to the `Gifts` page: **+2**
    - [ ] The **GIFTS** link in `<header>` on `Gifts` page is non-interactive and don't have a hover effects: **+2**
-   - [ ] When clicking on the **Logo** in `<header>`, it navigates to the `Home` page: **+2**
+   - [x] When clicking on the **Logo** in `<header>`, it navigates to the `Home` page: **+2**
    - [ ] The active **ALL** tab in `Gifts` section of `Gifts` page is non-interactive and don't have a hover effects: **+2**
    - [ ] Each Gift-card in the `Gifts` section of the `Gifts` page, `Best Gifts` section on `Home` page and cards in `<footer>` is interactive when hovering over any area of the card: **+6**
    - [x] In the `<footer>`, clicking on the card **CALL US** should initiate a phone call: **+2**

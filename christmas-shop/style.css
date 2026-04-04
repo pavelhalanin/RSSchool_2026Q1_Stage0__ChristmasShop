@@ -151,7 +151,25 @@ body {
     gap: 8px;
 }
 
-.cs_header__logo>img {
+.cs_header__logo>a {
+    text-decoration: none;
+    padding: 8px 20px;
+    color: var(--color-dark);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border: 1px solid transparent;
+}
+
+.cs_header__logo>a:active {
+    border: 1px dashed #06A44F;
+    border-radius: 4px;
+    background-color: rgba(6, 164, 79, 0.1);
+}
+
+.cs_header__logo>a>img {
     width: 24px;
     height: 24px;
 }
