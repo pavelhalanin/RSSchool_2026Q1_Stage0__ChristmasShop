@@ -160,14 +160,21 @@ body {
     align-items: center;
     gap: 8px;
 
-    border: 1px solid transparent;
+    transition: all ease 1s;
+    /* border: 1px dashed transparent; */
+}
+
+.cs_header__logo>a:hover {
+    cursor: pointer;
 }
 
 .cs_header__logo>a:active {
-    border: 1px dashed #06A44F;
-    border-radius: 4px;
-    background-color: rgba(6, 164, 79, 0.1);
+    cursor: pointer;
+    /* border: 1px dashed #06A44F; */
+    /* border-radius: 4px; */
+    /* background-color: rgba(6, 164, 79, 0.1); */
 }
+
 
 .cs_header__logo>a>img {
     width: 24px;
@@ -202,19 +209,22 @@ body {
     overflow: hidden;
 
     transition: all 0.5s ease;
-    border: 1px dashed transparent;
+    /* border: 1px dashed transparent; */
 }
 
 .cs_header__nav>ul>li>a:hover {
+    cursor: pointer;
     background-color: var(--color-primary-10);
     border-radius: 12px;
     color: var(--color-primary);
 }
 
 .cs_header__nav>ul>li>a:active {
-    background-color: rgba(6, 164, 79, 0.1);
-    border: 1px dashed green;
+    cursor: pointer;
+    /* background-color: rgba(6, 164, 79, 0.1); */
+    /* border: 1px dashed green; */
 }
+
 
 /* cs_main_hero_section */
 
