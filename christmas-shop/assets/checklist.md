@@ -27,7 +27,7 @@
 4. Interactivity: **+36**
    - [ ] Navigation elements (except `CONTACTS`) lead to corresponding sections on `Home` page: **+4**
    - [x] `CONTACTS` in navigation panel links to the `<footer>` on its own page: **+2**
-   - [ ] Smooth scrolling with anchor links: **+2**
+   - [x] Smooth scrolling with anchor links: **+2**
    - [x] When clicking on the **GIFTS** link in `<header>` and **Explore Magical Gifts** button in `Hero` and `CTA` sections on `Home` page, it navigates to the `Gifts` page: **+2**
    - [ ] The **GIFTS** link in `<header>` on `Gifts` page is non-interactive and don't have a hover effects: **+2**
    - [x] When clicking on the **Logo** in `<header>`, it navigates to the `Home` page: **+2**
