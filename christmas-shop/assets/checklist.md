@@ -5,7 +5,7 @@
 ### CrossCheck Criteria (110 points)
 
 1. Checking validation of pages: **+18**
-   - [ ] The layout for both pages is validated and error-free according to the W3C Validator (https://validator.w3.org/): **+12** (6 points per page)
+   - [x] The layout for both pages is validated and error-free according to the W3C Validator (https://validator.w3.org/): **+12** (6 points per page)
      - Valid markup of checked page corresponds to the message _"Document checking completed. No errors or warnings to show."_ In this case, we assign the full points for the checked page (+6).
      - If there are `warnings` but no `errors`, we assign half of the points (+3) for the checked page
    - [x] Favicon is added to each page: **+2**
@@ -17,7 +17,7 @@
    - [x] `About` section on `Home` page: **+6**
    - [ ] `Slider` section on `Home` page: **+6**
    - [x] `Best Gifts` section on `Home` page: **+6**
-   - [ ] `CTA` section on `Home` page: **+6**
+   - [x] `CTA` section on `Home` page: **+6**
    - [ ] `Gifts` section on `Gifts` page: **+6**
    - [x] `<footer>` on each page: **+6**
 3. CSS Requirements: **+10**

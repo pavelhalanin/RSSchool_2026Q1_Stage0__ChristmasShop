@@ -329,6 +329,102 @@ body {
     color: var(--color-tag-pink)
 }
 
+/* cs_main_cta_section */
+
+.cs_main_cta_section {
+    background-image: url(./assets/home-page/cta-section/bg-forest.png), url('./assets/home-page/bg-snow.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    background-color: var(--color-primary);
+
+    color: var(--color-static-white);
+    padding: 60px 0;
+}
+
+.cs_main_cta_section__container {
+    width: 426px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.cs_main_cta_section__container>h2 {
+    margin: 0;
+}
+
+.cs_main_cta_section__button {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.cs_main_cta_section__button button {
+    padding: 20px 32px;
+    background-color: #181C29;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    display: block;
+}
+
+.cs_main_cta_section__time {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 8px;
+}
+
+.cs_main_cta_section__time>ul {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--color-static-white-40);
+    border-radius: 20px;
+    width: 344px;
+    height: 72px;
+
+    display: flex;
+
+}
+
+.cs_main_cta_section__time>ul>li {
+    list-style-type: none;
+    width: calc(100%/4);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    position: relative;
+}
+
+.cs_main_cta_section__time>ul>li::after {
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: var(--color-static-white-40);
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cs_main_cta_section__time>ul>li:last-child:after {
+    display: none;
+}
+
+/* validator.w3.org say that is error to use tag h2 and than tag h4 => I add tag h3 */
+.cs_main_cta_section__time>ul>li>h2,
+.cs_main_cta_section__time>ul>li>h3,
+.cs_main_cta_section__time>ul>li>h4 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--color-static-white);
+}
+
 /* cs_footer_contacts__content */
 
 .cs_footer_contacts__section {
