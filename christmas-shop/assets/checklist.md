@@ -15,7 +15,7 @@
    - [x] `<header>` on each page: **+4**
    - [x] `Hero` section on `Home` page: **+6**
    - [x] `About` section on `Home` page: **+6**
-   - [ ] `Slider` section on `Home` page: **+6**
+   - [x] `Slider` section on `Home` page: **+6**
    - [x] `Best Gifts` section on `Home` page: **+6**
    - [x] `CTA` section on `Home` page: **+6**
    - [ ] `Gifts` section on `Gifts` page: **+6**
