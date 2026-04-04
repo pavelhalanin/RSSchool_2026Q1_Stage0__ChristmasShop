@@ -455,18 +455,30 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: all 0.5s ease;
+}
+
+.cs_main_slider_section__buttons>button:hover {
+    background-color: var(--color-static-white);
 }
 
 .cs_main_slider_section__buttons>button>svg>path {
     stroke: var(--color-static-white);
+    transition: all 0.5s ease;
 }
 
 .cs_main_slider_section__buttons>button:disabled {
-    border-color: var(--color-static-white-40);
+    background-color: transparent !important;
+    border-color: var(--color-static-white-40) !important;
 }
 
 .cs_main_slider_section__buttons>button:disabled>svg>path {
-    stroke: var(--color-static-white-40);
+    stroke: var(--color-static-white-40) !important;
+}
+
+.cs_main_slider_section__buttons>button:hover>svg>path {
+    stroke: var(--color-primary);
 }
 
 /* cs_main_best_section */
