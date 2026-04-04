@@ -18,7 +18,7 @@
    - [x] `Slider` section on `Home` page: **+6**
    - [x] `Best Gifts` section on `Home` page: **+6**
    - [x] `CTA` section on `Home` page: **+6**
-   - [ ] `Gifts` section on `Gifts` page: **+6**
+   - [x] `Gifts` section on `Gifts` page: **+6**
    - [x] `<footer>` on each page: **+6**
 3. CSS Requirements: **+10**
    - [x] For positioning gifts in `Best Gifts` section on `Home` page and gifts in `Gifts` section on `Gifts` page used **Flexbox** or **Grid Layout**: **+4**
@@ -31,8 +31,8 @@
    - [x] When clicking on the **GIFTS** link in `<header>` and **Explore Magical Gifts** button in `Hero` and `CTA` sections on `Home` page, it navigates to the `Gifts` page: **+2**
    - [x] The **GIFTS** link in `<header>` on `Gifts` page is non-interactive and don't have a hover effects: **+2**
    - [x] When clicking on the **Logo** in `<header>`, it navigates to the `Home` page: **+2**
-   - [ ] The active **ALL** tab in `Gifts` section of `Gifts` page is non-interactive and don't have a hover effects: **+2**
-   - [ ] Each Gift-card in the `Gifts` section of the `Gifts` page, `Best Gifts` section on `Home` page and cards in `<footer>` is interactive when hovering over any area of the card: **+6**
+   - [x] The active **ALL** tab in `Gifts` section of `Gifts` page is non-interactive and don't have a hover effects: **+2**
+   - [x] Each Gift-card in the `Gifts` section of the `Gifts` page, `Best Gifts` section on `Home` page and cards in `<footer>` is interactive when hovering over any area of the card: **+6**
    - [x] In the `<footer>`, clicking on the card **CALL US** should initiate a phone call: **+2**
    - [x] In the `<footer>`, clicking on the card **WRITE US** should open the mail client: **+2**
    - [x] In the `<footer>`, clicking on the card **MAGIC FOREST** should open a new browser tab with Google Maps displaying any location of your choice: **+2**
