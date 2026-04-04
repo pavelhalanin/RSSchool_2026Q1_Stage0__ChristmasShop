@@ -341,12 +341,17 @@ body {
 
 .cs_footer_contacts__content>ul>li {
     list-style-type: none;
-    background-color: rgba(236, 243, 248, 1);
+    background-color: var(--color-content-backgroud);
     border-radius: 20px;
 
     display: block;
     width: calc(100% / 3);
     padding: 20px;
+}
+
+.cs_footer_contacts__content>ul>li>a {
+    text-decoration: none;
+    color: var(--color-dark);
 }
 
 /* cs_footer */
