@@ -232,20 +232,20 @@ body {
     margin: 0;
 }
 
-.cs_main_hero_section__button {
+.cs_main_hero_section__button_container {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.cs_main_hero_section__button button {
+.cs_main_hero_section__button_container a {
     padding: 20px 32px;
     background-color: #181C29;
     border: none;
     color: white;
     border-radius: 20px;
     display: block;
+    text-decoration: none;
 }
 
 /* cs_main_best_section */
@@ -353,19 +353,20 @@ body {
     margin: 0;
 }
 
-.cs_main_cta_section__button {
+.cs_main_cta_section__button_container {
     display: flex;
     justify-content: center;
     padding: 20px 0;
 }
 
-.cs_main_cta_section__button button {
+.cs_main_cta_section__button_container a {
     padding: 20px 32px;
     background-color: #181C29;
     border: none;
     color: white;
     border-radius: 20px;
     display: block;
+    text-decoration: none;
 }
 
 .cs_main_cta_section__time {
