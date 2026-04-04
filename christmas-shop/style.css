@@ -331,6 +331,10 @@ a {
     .cs_about_section__wrapper {
         flex-wrap: wrap;
     }
+
+    .cs_about_section__text {
+        padding-bottom: 60px!important;
+    }
 }
 
 .cs_about_section__text {
