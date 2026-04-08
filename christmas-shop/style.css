@@ -514,6 +514,16 @@ a {
     background-color: var(--color-static-white);
     border-radius: 20px;
     overflow: hidden;
+
+    transition: all 0.5s ease;
+}
+
+.cs_main_best_section>div>ul>li:hover {
+    cursor: var(--url-cursor), pointer;
+}
+
+.cs_main_best_section>div>ul>li:hover h3 {
+    color: var(--color-primary);
 }
 
 .cs_main_best_section>div>ul>li>div:first-child {
