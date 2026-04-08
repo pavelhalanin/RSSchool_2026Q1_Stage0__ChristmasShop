@@ -298,11 +298,13 @@ a {
 
 /* cs_about_section */
 
-.cs_about_section {
+.cs_about_section_for_snow {
     background-image: url('./assets/home-page/bg-snow.png');
     background-position: center center;
     background-size: cover;
+}
 
+.cs_about_section {
     max-width: 1276px;
     margin: 0 auto;
     padding: 60px 0;
