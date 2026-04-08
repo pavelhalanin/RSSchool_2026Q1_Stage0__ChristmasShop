@@ -359,7 +359,8 @@ a {
 }
 
 .cs_about_section__caption {
-    color: var(--color-primary)
+    color: var(--color-primary);
+    margin: 0;
 }
 
 .cs_about_section__image {
