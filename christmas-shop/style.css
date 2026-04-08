@@ -460,6 +460,7 @@ a {
 }
 
 .cs_main_slider_section__buttons>button:hover {
+    cursor: var(--url-cursor), pointer;
     background-color: var(--color-static-white);
 }
 
@@ -471,6 +472,7 @@ a {
 .cs_main_slider_section__buttons>button:disabled {
     background-color: transparent !important;
     border-color: var(--color-static-white-40) !important;
+    cursor: not-allowed;;
 }
 
 .cs_main_slider_section__buttons>button:disabled>svg>path {
