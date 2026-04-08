@@ -856,32 +856,32 @@ a {
     flex-direction: column-reverse;
 }
 
-.cs_gifts_page_gifts_section__array>ul>li>div:last-child>h3 {
+.cs_gifts_page_gifts_section__array>ul>li>div:last-child>h2 {
     transition: all 0.5s ease;
 }
 
-.cs_gifts_page_gifts_section__array>ul>li:hover>div:last-child>h3 {
+.cs_gifts_page_gifts_section__array>ul>li:hover>div:last-child>h2 {
     color: var(--color-primary);
 }
 
-.cs_gifts_page_gifts_section__array>ul>li h3 {
+.cs_gifts_page_gifts_section__array>ul>li h2 {
     color: var(--color-dark);
 }
 
-.cs_gifts_page_gifts_section__array>ul>li h4,
-.cs_gifts_page_gifts_section__array>ul>li h3 {
+.cs_gifts_page_gifts_section__array>ul>li h3,
+.cs_gifts_page_gifts_section__array>ul>li h2 {
     width: 100%;
     margin: 0;
 }
 
-.cs_gifts_page_gifts_section__array>ul>li[data-status='for-work'] h4 {
+.cs_gifts_page_gifts_section__array>ul>li[data-status='for-work'] h3 {
     color: var(--color-tag-purple)
 }
 
-.cs_gifts_page_gifts_section__array>ul>li[data-status='for-health'] h4 {
+.cs_gifts_page_gifts_section__array>ul>li[data-status='for-health'] h3 {
     color: var(--color-tag-green)
 }
 
-.cs_gifts_page_gifts_section__array>ul>li[data-status='for-harmony'] h4 {
+.cs_gifts_page_gifts_section__array>ul>li[data-status='for-harmony'] h3 {
     color: var(--color-tag-pink)
 }
