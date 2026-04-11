@@ -785,17 +785,21 @@ a {
 /* cs_gifts_page_gifts_section */
 
 .cs_gifts_page_gifts_section {
-    background-image: url(./assets/gifts-page/gifts-section/bg-garland.png);
-    background-position: center center;
-    background-size: cover;
+    background: url(./assets/gifts-page/gifts-section/bg-garland.png) top/contain no-repeat, var(--color-primary);
 
     color: var(--color-static-white);
     padding: 60px 0;
+    border-radius: 20px;
 }
 
 .cs_gifts_page_gifts_section__h1 {
     max-width: 426px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
+}
+
+.cs_gifts_page_gifts_section__h1 h1 {
+    text-align: center;
+    margin: 0;
 }
 
 .cs_gifts_page_gifts_section__nav {
@@ -834,7 +838,9 @@ a {
     pointer-events: none;
 }
 
-.cs_gifts_page_gifts_section__array>ul {
+/* cs_array_gifts */
+
+.cs_array_gifts ul {
     margin: 0;
     padding: 0;
 
@@ -844,75 +850,71 @@ a {
     justify-content: center;
 }
 
-.cs_gifts_page_gifts_section__array>ul>li {
+.cs_array_gifts ul>li {
     list-style-type: none;
+}
+
+.cs_array_gifts ul>li>button {
     width: 310px;
-    background-color: var(--color-static-white);
+    height: 100%;
+    background-color: var(--color-content-backgroud);
     border-radius: 20px;
     overflow: hidden;
-}
+    border: none;
 
-.cs_gifts_page_gifts_section__array>ul>li>div:first-child {
-    width: 310px;
-    height: 230px;
-    background-color: var(--color-content-backgroud);
-}
-
-.cs_gifts_page_gifts_section__array>ul>li>div:first-child {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.cs_gifts_page_gifts_section__array>ul>li[data-status='for-work']>div:first-child {
-    background-image: url(./assets/home-page/best-section/gift-for-work.png);
-}
-
-.cs_gifts_page_gifts_section__array>ul>li[data-status='for-health']>div:first-child {
-    background-image: url(./assets/home-page/best-section/gift-for-health.png);
-}
-
-.cs_gifts_page_gifts_section__array>ul>li[data-status='for-harmony']>div:first-child {
-    background-image: url(./assets/home-page/best-section/gift-for-harmony.png);
-}
-
-.cs_gifts_page_gifts_section__array>ul>li>div:last-child {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-}
-
-.cs_gifts_page_gifts_section__array>ul>li>div:last-child>h2 {
     transition: all 0.5s ease;
+    padding: 0;
 }
 
-.cs_gifts_page_gifts_section__array>ul>li:hover {
+.cs_array_gifts ul>li>button:hover {
     cursor: var(--url-cursor), pointer;
 }
 
-.cs_gifts_page_gifts_section__array>ul>li:hover>div:last-child>h2 {
-    color: var(--color-primary);
-}
-
-.cs_gifts_page_gifts_section__array>ul>li h2 {
-    color: var(--color-dark);
-}
-
-.cs_gifts_page_gifts_section__array>ul>li h3,
-.cs_gifts_page_gifts_section__array>ul>li h2 {
+.cs_array_gifts__image {
+    display: block;
     width: 100%;
-    margin: 0;
+    height: 230px;
 }
 
-.cs_gifts_page_gifts_section__array>ul>li[data-status='for-work'] h3 {
+.cs_array_gifts__image img {
+    width: 100%;
+    height: auto;
+}
+
+.cs_array_gifts__text_block {
+    display: block;
+    width: calc(100% - 20px*2);
+    height: calc(112px - 20px*2);
+    padding: 20px;
+    background-color: var(--color-static-white);
+    border-radius: 20px;
+}
+
+.cs_array_gifts__status {
+    display: block;
+    text-align: left;
+}
+
+.cs_array_gifts ul>li[data-status='for-work'] .cs_array_gifts__status {
     color: var(--color-tag-purple)
 }
 
-.cs_gifts_page_gifts_section__array>ul>li[data-status='for-health'] h3 {
+.cs_array_gifts ul>li[data-status='for-health'] .cs_array_gifts__status {
     color: var(--color-tag-green)
 }
 
-.cs_gifts_page_gifts_section__array>ul>li[data-status='for-harmony'] h3 {
+.cs_array_gifts ul>li[data-status='for-harmony'] .cs_array_gifts__status {
     color: var(--color-tag-pink)
+}
+
+.cs_array_gifts__name {
+    text-align: left;
+    display: block;
+    padding-top: 8px;
+
+    transition: all 0.5s ease;
+}
+
+.cs_array_gifts ul>li>button:hover .cs_array_gifts__name {
+    color: var(--color-primary);
 }
