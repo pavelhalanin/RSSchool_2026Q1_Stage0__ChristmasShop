@@ -740,7 +740,11 @@ a {
     list-style-type: none;
 }
 
-.cs_gifts_page_gifts_section__nav>ul>li>button {
+.cs_gifts_page_gifts_section__nav>ul>li>h2 {
+    margin: 0;
+}
+
+.cs_gifts_page_gifts_section__nav>ul>li button {
     padding: 12px 20px;
     border-radius: 12px;
     background-color: transparent;
@@ -748,13 +752,13 @@ a {
     color: var(--color-static-white);
 }
 
-.cs_gifts_page_gifts_section__nav>ul>li>button:hover,
-.cs_gifts_page_gifts_section__nav>ul>li>button[data-is-active] {
+.cs_gifts_page_gifts_section__nav>ul>li button:hover,
+.cs_gifts_page_gifts_section__nav>ul>li button[data-is-active] {
     background-color: var(--color-static-white-20);
     cursor: var(--url-cursor), pointer;
 }
 
-.cs_gifts_page_gifts_section__nav>ul>li>button[data-is-active='1'] {
+.cs_gifts_page_gifts_section__nav>ul>li button[data-is-active='1'] {
     cursor: default;
     pointer-events: none;
 }
