@@ -67,10 +67,12 @@ a {
     transition: all 1s ease;
 }
 
-.cs__primary_button:hover {
-    cursor: var(--url-cursor), pointer;
-    background-color: var(--color-static-white);
-    color: var(--color-dark);
+@media (hover: hover) {
+    .cs__primary_button:hover {
+        cursor: var(--url-cursor), pointer;
+        background-color: var(--color-static-white);
+        color: var(--color-dark);
+    }
 }
 
 /* Typography */
@@ -184,9 +186,11 @@ a {
     /* border: 1px dashed transparent; */
 }
 
-.cs_header__logo>a:hover {
-    cursor: pointer;
-    cursor: var(--url-cursor), pointer;
+@media (hover: hover) {
+    .cs_header__logo>a:hover {
+        cursor: pointer;
+        cursor: var(--url-cursor), pointer;
+    }
 }
 
 .cs_header__logo>a:active {
@@ -266,12 +270,20 @@ a {
     /* border: 1px dashed transparent; */
 }
 
-.cs_header__nav>ul>li>a:hover,
 .cs_header__nav>ul>li>a[data-is-active='1'] {
     cursor: var(--url-cursor), pointer;
     background-color: var(--color-primary-10);
     border-radius: 12px;
     color: var(--color-primary);
+}
+
+@media (hover: hover) {
+    .cs_header__nav>ul>li>a:hover {
+        cursor: var(--url-cursor), pointer;
+        background-color: var(--color-primary-10);
+        border-radius: 12px;
+        color: var(--color-primary);
+    }
 }
 
 .cs_header__nav>ul>li>a[data-is-active='1'] {
@@ -586,9 +598,11 @@ a {
     transition: all 0.5s ease;
 }
 
-.cs_main_slider_section__buttons>button:hover {
-    cursor: var(--url-cursor), pointer;
-    background-color: var(--color-static-white);
+@media (hover: hover) {
+    .cs_main_slider_section__buttons>button:hover {
+        cursor: var(--url-cursor), pointer;
+        background-color: var(--color-static-white);
+    }
 }
 
 .cs_main_slider_section__buttons>button>svg>path {
@@ -606,8 +620,10 @@ a {
     stroke: var(--color-static-white-40) !important;
 }
 
-.cs_main_slider_section__buttons>button:hover>svg>path {
-    stroke: var(--color-primary);
+@media (hover: hover) {
+    .cs_main_slider_section__buttons>button:hover>svg>path {
+        stroke: var(--color-primary);
+    }
 }
 
 /* cs_main_best_section */
@@ -775,9 +791,11 @@ a {
     color: var(--color-dark);
 }
 
-.cs_footer__big_social_links>ul>li>a:hover {
-    cursor: var(--url-cursor), pointer;
-    color: var(--color-primary);
+@media (hover: hover) {
+    .cs_footer__big_social_links>ul>li>a:hover {
+        cursor: var(--url-cursor), pointer;
+        color: var(--color-primary);
+    }
 }
 
 .cs_footer__big_social_links>ul>li>a img {
@@ -835,9 +853,11 @@ a {
     transition: all 0.5s ease;
 }
 
-.cs_footer a:hover {
-    cursor: var(--url-cursor), pointer;
-    color: var(--color-primary);
+@media (hover: hover) {
+    .cs_footer a:hover {
+        cursor: var(--url-cursor), pointer;
+        color: var(--color-primary);
+    }
 }
 
 .cs_footer__socials {
@@ -867,8 +887,10 @@ a {
     transition: all 0.5s ease;
 }
 
-.cs_footer__socials>ul>li>a:hover {
-    cursor: var(--url-cursor), pointer;
+@media (hover: hover) {
+    .cs_footer__socials>ul>li>a:hover {
+        cursor: var(--url-cursor), pointer;
+    }
 }
 
 .cs_footer__socials>ul>li>a>svg {
@@ -876,8 +898,10 @@ a {
     transition: all 1s ease;
 }
 
-.cs_footer__socials>ul>li>a:hover>svg {
-    stroke: var(--color-primary);
+@media (hover: hover) {
+    .cs_footer__socials>ul>li>a:hover>svg {
+        stroke: var(--color-primary);
+    }
 }
 
 /* cs_gifts_page_gifts_section */
@@ -986,10 +1010,16 @@ a {
     }
 }
 
-.cs_gifts_page_gifts_section__nav>ul>li button:hover,
 .cs_gifts_page_gifts_section__nav>ul>li button[data-is-active] {
     background-color: var(--color-static-white-20);
     cursor: var(--url-cursor), pointer;
+}
+
+@media (hover: hover) {
+    .cs_gifts_page_gifts_section__nav>ul>li button:hover {
+        background-color: var(--color-static-white-20);
+        cursor: var(--url-cursor), pointer;
+    }
 }
 
 .cs_gifts_page_gifts_section__nav>ul>li button[data-is-active='1'] {
@@ -1025,8 +1055,10 @@ a {
     padding: 0;
 }
 
-.cs_array_gifts ul>li>button:hover {
-    cursor: var(--url-cursor), pointer;
+@media (hover: hover) {
+    .cs_array_gifts ul>li>button:hover {
+        cursor: var(--url-cursor), pointer;
+    }
 }
 
 .cs_array_gifts__image {
@@ -1074,6 +1106,8 @@ a {
     transition: all 0.5s ease;
 }
 
-.cs_array_gifts ul>li>button:hover .cs_array_gifts__name {
-    color: var(--color-primary);
+@media (hover: hover) {
+    .cs_array_gifts ul>li>button:hover .cs_array_gifts__name {
+        color: var(--color-primary);
+    }
 }
