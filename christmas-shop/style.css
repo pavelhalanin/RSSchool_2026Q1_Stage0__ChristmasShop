@@ -891,8 +891,31 @@ a {
 }
 
 .cs_gifts_page_gifts_section__h1 {
-    max-width: 426px;
     margin: 0 auto 20px auto;
+}
+
+@media screen and (min-width: 1140px) {
+    /* (1140 - 00) */
+
+    .cs_gifts_page_gifts_section__h1 {
+        max-width: 426px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1139px) {
+    /* 768 - 1140 (768 - 1139) */
+
+    .cs_gifts_page_gifts_section__h1 {
+        max-width: 426px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    /* 380 - 768 (0 - 767) */
+
+    .cs_gifts_page_gifts_section__h1 {
+        max-width: 364px;
+    }
 }
 
 .cs_gifts_page_gifts_section__h1 h1 {
@@ -910,7 +933,6 @@ a {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 8px;
 }
 
 .cs_gifts_page_gifts_section__nav>ul>li {
@@ -922,11 +944,46 @@ a {
 }
 
 .cs_gifts_page_gifts_section__nav>ul>li button {
-    padding: 12px 20px;
     border-radius: 12px;
     background-color: transparent;
     border: none;
     color: var(--color-static-white);
+}
+
+@media screen and (min-width: 1140px) {
+    /* (1140 - 00) */
+
+    .cs_gifts_page_gifts_section__nav>ul {
+        gap: 8px;
+    }
+
+    .cs_gifts_page_gifts_section__nav>ul>li button {
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1139px) {
+    /* 768 - 1140 (768 - 1139) */
+
+    .cs_gifts_page_gifts_section__nav>ul {
+        gap: 8px;
+    }
+
+    .cs_gifts_page_gifts_section__nav>ul>li button {
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    /* 380 - 768 (0 - 767) */
+
+    .cs_gifts_page_gifts_section__nav>ul {
+        gap: 0px;
+    }
+
+    .cs_gifts_page_gifts_section__nav>ul>li button {
+        padding: 12px 8px;
+    }
 }
 
 .cs_gifts_page_gifts_section__nav>ul>li button:hover,
