@@ -350,8 +350,8 @@ a {
     background-size: cover;
 }
 
-@media screen and (min-width: 1140px) {
-    /* (1140 - 00) */
+@media screen and (min-width: 1439px) {
+    /* (1440 - 00) */
 
     .cs_about_section {
         max-width: 1276px;
@@ -400,8 +400,8 @@ a {
     }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1139px) {
-    /* 768 - 1140 (768 - 1139) */
+@media screen and (min-width: 767px) and (max-width: 1439px) {
+    /* 768 - 1140 [768; 1439] */
 
     .cs_about_section {
         padding: 60px 0;
@@ -451,8 +451,8 @@ a {
     }
 }
 
-@media screen and (max-width: 766px) {
-    /* 380 - 768 (0 - 767) */
+@media screen and (max-width: 767px) {
+    /* 380 - 768 [0; 767] */
 
     .cs_about_section {
         padding: 60px 8px;
@@ -531,8 +531,8 @@ a {
     align-items: flex-end;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1139px) {
-    /* 768 - 1140 (768 - 1139) */
+@media screen and (min-width: 767px) and (max-width: 1439px) {
+    /* 768 - 1140 [768; 1439] */
 
     .cs_main_slider_section {
         width: calc(100% - 8px*2);
@@ -540,8 +540,8 @@ a {
     }
 }
 
-@media screen and (max-width: 766px) {
-    /* 380 - 768 (0 - 767) */
+@media screen and (max-width: 767px) {
+    /* 380 - 768 [0; 767] */
 
     .cs_main_slider_section {
         width: calc(100% - 8px*2);
@@ -730,24 +730,24 @@ a {
     color: var(--color-static-white);
 }
 
-@media screen and (min-width: 1140px) {
-    /* (1140 - 00) */
+@media screen and (min-width: 1440px) {
+    /* (1440 - 00) */
 
     .cs_main_cta_section__container {
         width: 426px;
     }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1139px) {
-    /* 768 - 1140 (768 - 1139) */
+@media screen and (min-width: 767px) and (max-width: 1439px) {
+    /* 768 - 1140 [768; 1439] */
 
     .cs_main_cta_section__container {
         width: 426px;
     }
 }
 
-@media screen and (max-width: 766px) {
-    /* 380 - 768 (0 - 767) */
+@media screen and (max-width: 767px) {
+    /* 380 - 768 [0; 767] */
 
     .cs_main_cta_section__container {
         width: 364px;
@@ -774,7 +774,6 @@ a {
     border-radius: 20px;
 
     display: block;
-    width: calc(100% / 3);
 }
 
 .cs_footer__big_social_links>ul>li>a {
@@ -807,8 +806,14 @@ a {
     margin: 0;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1139px) {
-    /* 768 - 1140 (768 - 1139) */
+@media screen and (min-width: 1439px) {
+    .cs_footer__big_social_links>ul>li {
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1439px) {
+    /* 768 - 1140 [768; 1439] */
 
     .cs_footer__big_social_links {
         padding: 60px 8px;
@@ -823,8 +828,8 @@ a {
     }
 }
 
-@media screen and (max-width: 766px) {
-    /* 380 - 768 (0 - 767) */
+@media screen and (max-width: 767px) {
+    /* 380 - 768 [0; 767] */
 
     .cs_footer__big_social_links {
         padding: 60px 8px;
@@ -918,24 +923,24 @@ a {
     margin: 0 auto 20px auto;
 }
 
-@media screen and (min-width: 1140px) {
-    /* (1140 - 00) */
+@media screen and (min-width: 1439px) {
+    /* (1440 - 00) */
 
     .cs_gifts_page_gifts_section__h1 {
         max-width: 426px;
     }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1139px) {
-    /* 768 - 1140 (768 - 1139) */
+@media screen and (min-width: 767px) and (max-width: 1439px) {
+    /* 768 - 1140 [768; 1439] */
 
     .cs_gifts_page_gifts_section__h1 {
         max-width: 426px;
     }
 }
 
-@media screen and (max-width: 766px) {
-    /* 380 - 768 (0 - 767) */
+@media screen and (max-width: 767px) {
+    /* 380 - 768 [0; 767] */
 
     .cs_gifts_page_gifts_section__h1 {
         max-width: 364px;
@@ -974,8 +979,8 @@ a {
     color: var(--color-static-white);
 }
 
-@media screen and (min-width: 1140px) {
-    /* (1140 - 00) */
+@media screen and (min-width: 1439px) {
+    /* (1440 - 00) */
 
     .cs_gifts_page_gifts_section__nav>ul {
         gap: 8px;
@@ -986,8 +991,8 @@ a {
     }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1139px) {
-    /* 768 - 1140 (768 - 1139) */
+@media screen and (min-width: 767px) and (max-width: 1439px) {
+    /* 768 - 1140 [768; 1439] */
 
     .cs_gifts_page_gifts_section__nav>ul {
         gap: 8px;
@@ -998,8 +1003,8 @@ a {
     }
 }
 
-@media screen and (max-width: 766px) {
-    /* 380 - 768 (0 - 767) */
+@media screen and (max-width: 767px) {
+    /* 380 - 768 [0; 767] */
 
     .cs_gifts_page_gifts_section__nav>ul {
         gap: 0px;
