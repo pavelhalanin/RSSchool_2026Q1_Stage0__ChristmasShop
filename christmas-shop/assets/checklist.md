@@ -97,17 +97,17 @@
 ### CrossCheck Criteria (90 points)
 
 1. Implementation of the **burger menu** on both pages: **+22**
-   - [ ] At a page width of 768px and less, the navigation panel hides, and the burger icon appears: **+2**
-   - [ ] When clicking the burger icon, the burger menu slides out from the right, and the burger icon smoothly transforms into a cross: **+2**
-   - [ ] The burger menu occupies the entire available screen area below the `<header>` block: **+2**
-   - [ ] When clicking the cross, the burger menu smoothly hides, moving to the right of the screen, and the cross smoothly transforms into a burger icon: **+2**
-   - [ ] The burger icon is created using HTML and CSS without the use of images/svg: **+2**
-   - [ ] Links in the burger menu work, providing smooth scrolling to anchor points: **+2**
-   - [ ] When clicking on any link (interactive or non-interactive) in the menu, the burger menu hides, and the cross transforms into a burger icon: **+2**
-   - [ ] When clicking on any link (interactive or non-interactive) in the menu, the burger menu smoothly hides to the right, and the cross smoothly transforms into a burger icon if a user stays on the same page: **+2**
-   - [ ] The placement and sizes of elements in the burger menu correspond to the layout (horizontal and vertical centering of menu items): **+2**
-   - [ ] The page behind the open menu does not scroll: **+2**
-   - [ ] When the page width increases to more than 768px, the burger icon and the open burger menu hide, and the navigation panel appears: **+2**
+   - [x] At a page width of 768px and less, the navigation panel hides, and the burger icon appears: **+2**
+   - [x] When clicking the burger icon, the burger menu slides out from the right, and the burger icon smoothly transforms into a cross: **+2**
+   - [x] The burger menu occupies the entire available screen area below the `<header>` block: **+2**
+   - [x] When clicking the cross, the burger menu smoothly hides, moving to the right of the screen, and the cross smoothly transforms into a burger icon: **+2**
+   - [x] The burger icon is created using HTML and CSS without the use of images/svg: **+2**
+   - [x] Links in the burger menu work, providing smooth scrolling to anchor points: **+2**
+   - [x] When clicking on any link (interactive or non-interactive) in the menu, the burger menu hides, and the cross transforms into a burger icon: **+2**
+   - [x] When clicking on any link (interactive or non-interactive) in the menu, the burger menu smoothly hides to the right, and the cross smoothly transforms into a burger icon if a user stays on the same page: **+2**
+   - [x] The placement and sizes of elements in the burger menu correspond to the layout (horizontal and vertical centering of menu items): **+2**
+   - [x] The page behind the open menu does not scroll: **+2**
+   - [x] When the page width increases to more than 768px, the burger icon and the open burger menu hide, and the navigation panel appears: **+2**
 2. Implementation of the **Slider** on the `home` page: **+18**
    - [ ] Scrolling the slider in the corresponding direction is implemented by pressing left arrow button and right arrow button: **+2**
    - [ ] The left arrow button is inactive at the far left position of the slider: **+2**

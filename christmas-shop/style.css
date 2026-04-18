@@ -236,53 +236,153 @@ a {
 
     .cs_header__nav {
         display: none;
+        transition: all 3s ease;
+    }
+
+    .cs_header_hamburger .cs_header_hamburger__line {
+        transition: all 0.5s ease;
+    }
+
+    .cs_header_hamburger {
+        position: relative;
+    }
+
+    .cs_header_hamburger .cs_header_hamburger__line {
+        position: absolute;
+    }
+
+    .cs_header_hamburger .cs_header_hamburger__line:first-child {
+        top: calc(20px - 4px);
+        transform: translateY(0) rotate(0deg);
+    }
+
+    .cs_header_hamburger .cs_header_hamburger__line:last-child {
+        top: calc(20px + 4px);
+        transform: translateY(0) rotate(0deg);
+    }
+
+    .cs_header_hamburger[data-is-menu-open='true'] .cs_header_hamburger__line:first-child {
+        top: 20px;
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    .cs_header_hamburger[data-is-menu-open='true'] .cs_header_hamburger__line:last-child {
+        top: 20px;
+        transform: translateY(0) rotate(45deg);
+    }
+
+    .cs_header_hamburger+.cs_header__nav {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 200vw;
+        transition: all 2s ease;
+
+        margin-top: 64px;
+        width: 100%;
+        height: calc(100% - 64px);
+        background-color: var(--color-static-white-20);
+    }
+
+    .cs_header_hamburger[data-is-menu-open='true']+.cs_header__nav {
+        top: 0;
+        left: 0;
+        background-color: var(--color-static-white);
+    }
+
+    .cs_header__nav>ul {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cs_header__nav>ul>li {
+        list-style-type: none;
+    }
+
+    .cs_header__nav>ul>li>a {
+        /* typography--action-large */
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 152%;
+        letter-spacing: 16%;
+        text-transform: uppercase;
+        /* typography--action-large */
+
+        display: block;
+        text-decoration: none;
+        padding: 12px 20px;
+        color: var(--color-dark)
+    }
+
+    .cs_header__no_scroll_body {
+        overflow: hidden;
     }
 }
 
-.cs_header__nav>ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 8px;
-}
 
-.cs_header__nav>ul>li {
-    list-style-type: none;
-    text-transform: uppercase;
+@media screen and (min-width: 769px) {
+    .cs_header__nav>ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 8px;
+    }
 
-}
+    .cs_header__nav>ul>li {
+        list-style-type: none;
+        text-transform: uppercase;
 
-.cs_header__nav>ul>li>a {
-    text-decoration: none;
-    color: black;
+    }
 
-    display: flex;
-    padding: 12px 20px;
+    .cs_header__nav>ul>li>a {
+        /* typography--action-small */
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 5%;
+        text-transform: uppercase;
+        /* typography--action-small */
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        text-decoration: none;
+        color: black;
 
-    border-radius: 4px;
-    overflow: hidden;
+        display: flex;
+        padding: 12px 20px;
 
-    transition: all 0.5s ease;
-    /* border: 1px dashed transparent; */
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-.cs_header__nav>ul>li>a[data-is-active='1'] {
-    cursor: var(--url-cursor), pointer;
-    background-color: var(--color-primary-10);
-    border-radius: 12px;
-    color: var(--color-primary);
-}
+        border-radius: 4px;
+        overflow: hidden;
 
-@media (hover: hover) {
-    .cs_header__nav>ul>li>a:hover {
+        transition: all 0.5s ease;
+        /* border: 1px dashed transparent; */
+    }
+
+    .cs_header__nav>ul>li>a[data-is-active='1'] {
         cursor: var(--url-cursor), pointer;
         background-color: var(--color-primary-10);
         border-radius: 12px;
         color: var(--color-primary);
+    }
+
+    @media (hover: hover) {
+        .cs_header__nav>ul>li>a:hover {
+            cursor: var(--url-cursor), pointer;
+            background-color: var(--color-primary-10);
+            border-radius: 12px;
+            color: var(--color-primary);
+        }
     }
 }
 

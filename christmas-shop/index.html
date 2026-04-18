@@ -111,6 +111,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
     <!-- FONTS > > > > > > > > -->
+
+    <script src="/pavelhalanin-JSFEPRESCHOOL2026Q1/christmas-shop/script.js?nocache=2026-04-18_19-50"></script>
 </head>
 
 <body>
@@ -123,26 +125,27 @@
                     <span class="typography--action-small">The gifts</span>
                 </a>
             </div>
-            <button class="cs_header_hamburger" onclick="alert('nothing')">
+            <button id="cs_header__button" class="cs_header_hamburger" data-is-menu-open="false"
+                onclick="ChristmasShop_Burger.openOrCloseBurger()">
                 <span class="cs_header_hamburger__line"></span>
                 <span class="cs_header_hamburger__line"></span>
             </button>
-            <nav class="cs_header__nav">
+            <nav id="cs_header__nav" class="cs_header__nav">
                 <ul>
                     <li>
-                        <a class="typography--action-small"
+                        <a onclick="ChristmasShop_Burger.openOrCloseBurger()"
                             href="/pavelhalanin-JSFEPRESCHOOL2026Q1/christmas-shop/gifts/">Gifts</a>
                     </li>
                     <li>
-                        <a class="typography--action-small"
+                        <a onclick="ChristmasShop_Burger.openOrCloseBurger()"
                             href="/pavelhalanin-JSFEPRESCHOOL2026Q1/christmas-shop/#about">About</a>
                     </li>
                     <li>
-                        <a class="typography--action-small"
+                        <a onclick="ChristmasShop_Burger.openOrCloseBurger()"
                             href="/pavelhalanin-JSFEPRESCHOOL2026Q1/christmas-shop/#best">Best</a>
                     </li>
                     <li>
-                        <a class="typography--action-small" href="#contacts">Contacts</a>
+                        <a onclick="ChristmasShop_Burger.openOrCloseBurger()" href="#contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
