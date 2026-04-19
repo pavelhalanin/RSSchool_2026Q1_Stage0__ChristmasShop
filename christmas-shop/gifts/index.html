@@ -112,7 +112,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
     <!-- FONTS > > > > > > > > -->
 
-    <script src="/pavelhalanin-JSFEPRESCHOOL2026Q1/christmas-shop/script.js?nocache=2026-04-18_09-45"></script>
+    <script src="/pavelhalanin-JSFEPRESCHOOL2026Q1/christmas-shop/script.js?nocache=2026-04-19_11-30"></script>
 </head>
 
 <body>
@@ -189,7 +189,7 @@
                 </ul>
             </nav>
             <div class="cs_array_gifts">
-                <ul>
+                <ul id="cs_gifts__gifts_random">
                     <li data-status="for-work">
                         <button onclick="alert('nothing')">
                             <span class="cs_array_gifts__image">
@@ -325,6 +325,14 @@
                     </li>
                 </ul>
             </div>
+            <script>
+                try {
+                    ChristmasShop_Gifts.renderRandom();
+                }
+                catch (exception) {
+                    console.error(exception);
+                }
+            </script>
         </section>
     </main>
     <footer>
