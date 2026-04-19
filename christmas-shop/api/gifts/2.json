@@ -1,0 +1,12 @@
+{
+  "id": 2,
+  "name": "Console.log Guru",
+  "description": "Uses console.log like a crystal ball to find any issue.",
+  "category": "For Work",
+  "superpowers": {
+    "live": "+500",
+    "create": "+500",
+    "love": "+200",
+    "dream": "+400"
+  }
+}

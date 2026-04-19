@@ -1,0 +1,12 @@
+{
+  "id": 21,
+  "name": "Yoga Coder",
+  "description": "Easily switches from coding to yoga and back.",
+  "category": "For Health",
+  "superpowers": {
+    "live": "+400",
+    "create": "+400",
+    "love": "+400",
+    "dream": "+400"
+  }
+}

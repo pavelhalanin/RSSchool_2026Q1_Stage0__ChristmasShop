@@ -1,0 +1,12 @@
+{
+  "id": 34,
+  "name": "Pause Master",
+  "description": "Knows when to just step back from the keyboard and breathe.",
+  "category": "For Harmony",
+  "superpowers": {
+    "live": "+300",
+    "create": "+200",
+    "love": "+100",
+    "dream": "+100"
+  }
+}

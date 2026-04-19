@@ -1,0 +1,12 @@
+{
+  "id": 19,
+  "name": "Eye Protector",
+  "description": "Can work all day at the monitor without feeling like their eyes are on fire.",
+  "category": "For Health",
+  "superpowers": {
+    "live": "+100",
+    "create": "+300",
+    "love": "+500",
+    "dream": "+400"
+  }
+}

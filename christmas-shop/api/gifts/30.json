@@ -1,0 +1,12 @@
+{
+  "id": 30,
+  "name": "Inspiration Maestro",
+  "description": "Finds inspiration on an empty screen as if masterpieces are already there.",
+  "category": "For Harmony",
+  "superpowers": {
+    "live": "+300",
+    "create": "+200",
+    "love": "+400",
+    "dream": "+100"
+  }
+}

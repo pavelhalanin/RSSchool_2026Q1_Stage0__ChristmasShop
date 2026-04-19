@@ -1,0 +1,12 @@
+{
+  "id": 36,
+  "name": "Music Code Curator",
+  "description": "Creates work playlists so good, even deadlines follow the rhythm.",
+  "category": "For Harmony",
+  "superpowers": {
+    "live": "+300",
+    "create": "+200",
+    "love": "+300",
+    "dream": "+200"
+  }
+}

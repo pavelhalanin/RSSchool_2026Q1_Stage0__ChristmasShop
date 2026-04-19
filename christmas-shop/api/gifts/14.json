@@ -1,0 +1,12 @@
+{
+  "id": 14,
+  "name": "Step Master",
+  "description": "Gets 10,000 steps a day even while sitting at the computer.",
+  "category": "For Health",
+  "superpowers": {
+    "live": "+400",
+    "create": "+300",
+    "love": "+500",
+    "dream": "+400"
+  }
+}

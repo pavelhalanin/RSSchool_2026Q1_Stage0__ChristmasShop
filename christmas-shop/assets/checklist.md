@@ -130,9 +130,9 @@
    - [ ] The button appears after scrolling the page down by 300px: **+4**
    - [ ] When the button is clicked, the page scrolls to the top: **+2**
 7. Implementation of the **Modal** for selected gift on both pages: **+18**
-   - [ ] The Modal with the description of a specific gift opens when clicking on any part of a card of gift: **+4**
-   - [ ] The description and superpowers in the Modal corresponds to the selected gift: **+4**
-   - [ ] The part of the page outside the Modal is darkened: **+2**
-   - [ ] When the Modal is open, the vertical scroll of the page becomes inactive; when closed, it becomes active again: **+4**
-   - [ ] Clicking on the area around the Modal and **Close** button closes it: **+2**
-   - [ ] The Modal is centered on both axes, sizes of modal elements and their layout match the design: **+2**
+   - [x] The Modal with the description of a specific gift opens when clicking on any part of a card of gift: **+4**
+   - [x] The description and superpowers in the Modal corresponds to the selected gift: **+4**
+   - [x] The part of the page outside the Modal is darkened: **+2**
+   - [x] When the Modal is open, the vertical scroll of the page becomes inactive; when closed, it becomes active again: **+4**
+   - [x] Clicking on the area around the Modal and **Close** button closes it: **+2**
+   - [x] The Modal is centered on both axes, sizes of modal elements and their layout match the design: **+2**

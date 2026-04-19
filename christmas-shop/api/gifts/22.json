@@ -1,0 +1,12 @@
+{
+  "id": 22,
+  "name": "Healthy Snacker",
+  "description": "Always picks fruit, even when chocolate is within arm’s reach.",
+  "category": "For Health",
+  "superpowers": {
+    "live": "+400",
+    "create": "+300",
+    "love": "+200",
+    "dream": "+400"
+  }
+}

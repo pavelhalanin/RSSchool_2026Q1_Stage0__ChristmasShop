@@ -1,0 +1,12 @@
+{
+  "id": 27,
+  "name": "Bug Acceptance Guru",
+  "description": "Accepts bugs as part of the journey to perfection — it’s just another task.",
+  "category": "For Harmony",
+  "superpowers": {
+    "live": "+300",
+    "create": "+200",
+    "love": "+500",
+    "dream": "+400"
+  }
+}

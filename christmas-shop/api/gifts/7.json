@@ -1,0 +1,12 @@
+{
+  "id": 7,
+  "name": "Time Hacker",
+  "description": "Writes code at the last moment but always meets the deadline.",
+  "category": "For Work",
+  "superpowers": {
+    "live": "+500",
+    "create": "+500",
+    "love": "+500",
+    "dream": "+200"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": 12,
+  "name": "Pixel-Perfect Magician",
+  "description": "Aligns elements to the last pixel, even when the design looks abstract.",
+  "category": "For Work",
+  "superpowers": {
+    "live": "+500",
+    "create": "+500",
+    "love": "+400",
+    "dream": "+400"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": 32,
+  "name": "Empathy Guru",
+  "description": "Feels the team’s mood and can lift everyone’s spirits.",
+  "category": "For Harmony",
+  "superpowers": {
+    "live": "+500",
+    "create": "+200",
+    "love": "+500",
+    "dream": "+500"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": 15,
+  "name": "Snack Resister",
+  "description": "Ignoring desktop snacks like a strict dietician.",
+  "category": "For Health",
+  "superpowers": {
+    "live": "+400",
+    "create": "+100",
+    "love": "+200",
+    "dream": "+400"
+  }
+}

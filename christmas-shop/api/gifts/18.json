@@ -1,0 +1,12 @@
+{
+  "id": 18,
+  "name": "Break Guru",
+  "description": "Takes a stretch break every hour without forgetting, no matter how focused.",
+  "category": "For Health",
+  "superpowers": {
+    "live": "+300",
+    "create": "+300",
+    "love": "+300",
+    "dream": "+400"
+  }
+}

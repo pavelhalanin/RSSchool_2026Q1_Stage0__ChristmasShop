@@ -1,0 +1,12 @@
+{
+  "id": 20,
+  "name": "Stress Dodger",
+  "description": "Masters meditation right at the keyboard.",
+  "category": "For Health",
+  "superpowers": {
+    "live": "+100",
+    "create": "+400",
+    "love": "+200",
+    "dream": "+400"
+  }
+}

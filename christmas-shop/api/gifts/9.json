@@ -1,0 +1,12 @@
+{
+  "id": 9,
+  "name": "Documentation Whisperer",
+  "description": "Understands cryptic documentation as if they wrote it themselves.",
+  "category": "For Work",
+  "superpowers": {
+    "live": "+500",
+    "create": "+500",
+    "love": "+200",
+    "dream": "+100"
+  }
+}

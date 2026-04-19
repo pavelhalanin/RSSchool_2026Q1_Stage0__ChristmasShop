@@ -1,0 +1,12 @@
+{
+  "id": 6,
+  "name": "CSS Tamer",
+  "description": "Can make Flexbox and Grid work together like they were always best friends.",
+  "category": "For Work",
+  "superpowers": {
+    "live": "+200",
+    "create": "+500",
+    "love": "+200",
+    "dream": "+300"
+  }
+}

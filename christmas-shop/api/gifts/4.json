@@ -1,0 +1,12 @@
+{
+  "id": 4,
+  "name": "Merge Master",
+  "description": "Merges branches in Git without conflicts, like a wizard during an exam.",
+  "category": "For Work",
+  "superpowers": {
+    "live": "+200",
+    "create": "+500",
+    "love": "+200",
+    "dream": "+300"
+  }
+}

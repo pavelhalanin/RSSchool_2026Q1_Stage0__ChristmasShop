@@ -1,0 +1,12 @@
+{
+  "id": 13,
+  "name": "Posture Levitation",
+  "description": "Can sit for hours, but maintains perfect posture like a ballerina.",
+  "category": "For Health",
+  "superpowers": {
+    "live": "+400",
+    "create": "+500",
+    "love": "+500",
+    "dream": "+400"
+  }
+}

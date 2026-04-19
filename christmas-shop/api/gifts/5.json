@@ -1,0 +1,12 @@
+{
+  "id": 5,
+  "name": "Async Tamer",
+  "description": "Handles asynchronous code and promises like well-trained pets.",
+  "category": "For Work",
+  "superpowers": {
+    "live": "+100",
+    "create": "+400",
+    "love": "+200",
+    "dream": "+300"
+  }
+}

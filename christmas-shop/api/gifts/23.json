@@ -1,0 +1,12 @@
+{
+  "id": 23,
+  "name": "Chair Exerciser",
+  "description": "Manages to work out without leaving the chair.",
+  "category": "For Health",
+  "superpowers": {
+    "live": "+500",
+    "create": "+500",
+    "love": "+500",
+    "dream": "+400"
+  }
+}

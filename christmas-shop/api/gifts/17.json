@@ -1,0 +1,12 @@
+{
+  "id": 17,
+  "name": "Sleep Overlord",
+  "description": "Sleeps 6 hours but feels like they had 10.",
+  "category": "For Health",
+  "superpowers": {
+    "live": "+400",
+    "create": "+500",
+    "love": "+500",
+    "dream": "+500"
+  }
+}

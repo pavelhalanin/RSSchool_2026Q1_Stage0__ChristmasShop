@@ -1,0 +1,12 @@
+{
+  "id": 28,
+  "name": "Spontaneous Coding Philosopher",
+  "description": "Philosophically accepts any client suggestion after a long refactor.",
+  "category": "For Harmony",
+  "superpowers": {
+    "live": "+300",
+    "create": "+200",
+    "love": "+500",
+    "dream": "+400"
+  }
+}

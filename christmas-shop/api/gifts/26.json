@@ -1,0 +1,12 @@
+{
+  "id": 26,
+  "name": "Error Laugher",
+  "description": "Laughs at code errors like they’re jokes instead of getting angry.",
+  "category": "For Harmony",
+  "superpowers": {
+    "live": "+300",
+    "create": "+200",
+    "love": "+500",
+    "dream": "+500"
+  }
+}

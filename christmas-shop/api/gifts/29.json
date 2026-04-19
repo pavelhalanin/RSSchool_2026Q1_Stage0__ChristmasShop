@@ -1,0 +1,12 @@
+{
+  "id": 29,
+  "name": "Deadline Sage",
+  "description": "Remains zen even when the deadline is close and the project manager is stressed.",
+  "category": "For Harmony",
+  "superpowers": {
+    "live": "+200",
+    "create": "+200",
+    "love": "+300",
+    "dream": "+500"
+  }
+}

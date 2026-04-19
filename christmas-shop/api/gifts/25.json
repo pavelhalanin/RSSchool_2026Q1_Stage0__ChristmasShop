@@ -1,0 +1,12 @@
+{
+  "id": 25,
+  "name": "Joy Charger",
+  "description": "Finds joy in the little things—even in a build that finishes unexpectedly fast.",
+  "category": "For Harmony",
+  "superpowers": {
+    "live": "+200",
+    "create": "+200",
+    "love": "+500",
+    "dream": "+500"
+  }
+}

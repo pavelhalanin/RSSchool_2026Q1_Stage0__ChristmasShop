@@ -1,0 +1,12 @@
+{
+  "id": 31,
+  "name": "Peace Keeper",
+  "description": "Maintains inner calm even in moments of intense crisis.",
+  "category": "For Harmony",
+  "superpowers": {
+    "live": "+200",
+    "create": "+200",
+    "love": "+500",
+    "dream": "+500"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": 10,
+  "name": "Feedback Master",
+  "description": "Accepts client revisions with the Zen calm of Buddha.",
+  "category": "For Work",
+  "superpowers": {
+    "live": "+300",
+    "create": "+500",
+    "love": "+300",
+    "dream": "+400"
+  }
+}

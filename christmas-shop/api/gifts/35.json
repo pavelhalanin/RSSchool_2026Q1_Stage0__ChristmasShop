@@ -1,0 +1,12 @@
+{
+  "id": 35,
+  "name": "Coder Healer",
+  "description": "Can support a colleague in their darkest hour, even if it’s a 500 error.",
+  "category": "For Harmony",
+  "superpowers": {
+    "live": "+300",
+    "create": "+200",
+    "love": "+500",
+    "dream": "+500"
+  }
+}

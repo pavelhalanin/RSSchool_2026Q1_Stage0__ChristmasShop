@@ -1,0 +1,12 @@
+{
+  "id": 11,
+  "name": "Code Minimalist",
+  "description": "Writes code so concise that one line does more than a whole file.",
+  "category": "For Work",
+  "superpowers": {
+    "live": "+500",
+    "create": "+500",
+    "love": "+500",
+    "dream": "+200"
+  }
+}

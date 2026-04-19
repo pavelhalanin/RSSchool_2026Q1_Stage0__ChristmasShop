@@ -1,0 +1,12 @@
+{
+  "id": 33,
+  "name": "Laughter Generator",
+  "description": "Can lighten any tense situation with a joke that even bugs laugh at.",
+  "category": "For Harmony",
+  "superpowers": {
+    "live": "+300",
+    "create": "+200",
+    "love": "+200",
+    "dream": "+500"
+  }
+}

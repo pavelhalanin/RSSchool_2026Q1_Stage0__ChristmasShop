@@ -1,0 +1,12 @@
+{
+  "id": 24,
+  "name": "Caffeine Filter",
+  "description": "Drinks coffee at night and still falls asleep with no problem.",
+  "category": "For Health",
+  "superpowers": {
+    "live": "+400",
+    "create": "+300",
+    "love": "+500",
+    "dream": "+200"
+  }
+}
