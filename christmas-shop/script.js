@@ -246,7 +246,9 @@ class ChristmasShop_GiftModal {
       });
 
       document.body.appendChild(MODAL_WRAPPER);
-      document.querySelector("body").classList.add("cs_header__no_scroll_body");
+      document
+        .querySelector("body")
+        .classList.add("cs_gift_modal__no_scroll_body");
     } catch (exception) {
       console.error(exception);
       alert(exception);
@@ -261,7 +263,7 @@ class ChristmasShop_GiftModal {
       });
       document
         .querySelector("body")
-        .classList.remove("cs_header__no_scroll_body");
+        .classList.remove("cs_gift_modal__no_scroll_body");
     } catch (exception) {
       console.error(exception);
       alert(exception);

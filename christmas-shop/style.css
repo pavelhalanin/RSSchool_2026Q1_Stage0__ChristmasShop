@@ -321,10 +321,10 @@ a {
         padding: 12px 20px;
         color: var(--color-dark)
     }
-}
 
-.cs_header__no_scroll_body {
-    overflow: hidden;
+    .cs_header__no_scroll_body {
+        overflow: hidden;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -1393,6 +1393,10 @@ a {
     display: flex;
     gap: 8px;
     align-items: center;
+}
+
+.cs_gift_modal__no_scroll_body {
+    overflow: hidden;
 }
 
 #cs_scroll_button {
