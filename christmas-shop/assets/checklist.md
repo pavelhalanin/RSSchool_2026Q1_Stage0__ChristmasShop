@@ -125,10 +125,10 @@
    - [x] When switching categories, the gifts of the selected category are displayed. The order of sorting gifts does not matter: **+4**
    - [x] Only the selected category tab is active: **+2**
 6. Implementation of the **Scroll-to-Top** button on the `gifts` page: **+12**
-   - [ ] The button can only appear at a screen width of 768px and less: **+2**
-   - [ ] At the top of the page, the button is not displayed: **+4**
-   - [ ] The button appears after scrolling the page down by 300px: **+4**
-   - [ ] When the button is clicked, the page scrolls to the top: **+2**
+   - [x] The button can only appear at a screen width of 768px and less: **+2**
+   - [x] At the top of the page, the button is not displayed: **+4**
+   - [x] The button appears after scrolling the page down by 300px: **+4**
+   - [x] When the button is clicked, the page scrolls to the top: **+2**
 7. Implementation of the **Modal** for selected gift on both pages: **+18**
    - [x] The Modal with the description of a specific gift opens when clicking on any part of a card of gift: **+4**
    - [x] The description and superpowers in the Modal corresponds to the selected gift: **+4**

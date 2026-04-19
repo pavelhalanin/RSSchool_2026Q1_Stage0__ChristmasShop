@@ -437,3 +437,47 @@ class ChristmasShop_Timer {
     };
   }
 }
+
+class ChristmasShop_Scroll {
+  static scrollToTop() {
+    window.scrollTo({
+      top: 0,
+    });
+  }
+
+  static main() {
+    console.log("main()");
+    window.addEventListener(
+      "scroll",
+      ChristmasShop_Scroll.showOrHideScrollButton,
+    );
+    window.addEventListener(
+      "resize",
+      ChristmasShop_Scroll.showOrHideScrollButton,
+    );
+  }
+
+  static showOrHideScrollButton(event) {
+    const BUTTON = document.getElementById("cs_scroll_button");
+
+    if (!BUTTON) {
+      console.error("Не найден узел: #cs_scroll_button");
+      return;
+    }
+
+    if (window.innerWidth > 768) {
+      console.log("Скрываю кнопку скрола, так как window.innerWidth = ", window.innerWidth, " > 768");
+      BUTTON.classList.add("cs_scroll_button--hidden");
+      return;
+    }
+
+    if (document.documentElement.scrollTop > 300) {
+      console.log("Показываю кнопку скрола, так прокрутили больше 300 пикселей: document.documentElement.scrollTop = ", document.documentElement.scrollTop, " > 300");
+      BUTTON.classList.remove("cs_scroll_button--hidden");
+      return;
+    }
+
+    console.log("Скрываю кнопку скрола");
+    BUTTON.classList.add("cs_scroll_button--hidden");
+  }
+}
