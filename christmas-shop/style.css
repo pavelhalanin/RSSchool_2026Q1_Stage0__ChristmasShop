@@ -1191,15 +1191,18 @@ a {
     text-align: left;
 }
 
-.cs_array_gifts ul>li[data-status='for-work'] .cs_array_gifts__status {
+.cs_array_gifts ul>li[data-status='for-work'] .cs_array_gifts__status,
+.cs_array_gifts ul>li[data-status='For Work'] .cs_array_gifts__status {
     color: var(--color-tag-purple)
 }
 
-.cs_array_gifts ul>li[data-status='for-health'] .cs_array_gifts__status {
+.cs_array_gifts ul>li[data-status='for-health'] .cs_array_gifts__status,
+.cs_array_gifts ul>li[data-status='For Health'] .cs_array_gifts__status {
     color: var(--color-tag-green)
 }
 
-.cs_array_gifts ul>li[data-status='for-harmony'] .cs_array_gifts__status {
+.cs_array_gifts ul>li[data-status='for-harmony'] .cs_array_gifts__status,
+.cs_array_gifts ul>li[data-status='For Harmony'] .cs_array_gifts__status {
     color: var(--color-tag-pink)
 }
 

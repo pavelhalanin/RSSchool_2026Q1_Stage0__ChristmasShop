@@ -112,7 +112,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
     <!-- FONTS > > > > > > > > -->
 
-    <script src="/pavelhalanin-JSFEPRESCHOOL2026Q1/christmas-shop/script.js?nocache=2026-04-18_19-50"></script>
+    <script src="/pavelhalanin-JSFEPRESCHOOL2026Q1/christmas-shop/script.js?nocache=2026-04-19_09-45"></script>
 </head>
 
 <body>
@@ -245,7 +245,7 @@
             <div class="cs__container">
                 <div class="cs_main_best_section__caption typography--caption">Best Gifts</div>
                 <h2 class="cs_main_best_section__header typography--header-2">especially for you</h2>
-                <ul>
+                <ul id="cs_main_best_section__random">
                     <li data-status="for-work">
                         <button onclick="alert('nothing')">
                             <span class="cs_array_gifts__image">
@@ -292,6 +292,14 @@
                         </button>
                     </li>
                 </ul>
+                <script>
+                    try {
+                        ChristmasShop_BestGifts.renderRandom();
+                    }
+                    catch (exception) {
+                        console.error(exception);
+                    }
+                </script>
             </div>
         </section>
         <section class="cs_main_cta_section">
