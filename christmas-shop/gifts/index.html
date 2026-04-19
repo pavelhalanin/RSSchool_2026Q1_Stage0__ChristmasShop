@@ -112,7 +112,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
     <!-- FONTS > > > > > > > > -->
 
-    <script src="/pavelhalanin-JSFEPRESCHOOL2026Q1/christmas-shop/script.js?nocache=2026-04-19_16-30"></script>
+    <script src="/pavelhalanin-JSFEPRESCHOOL2026Q1/christmas-shop/script.js?nocache=2026-04-19_17-25"></script>
 </head>
 
 <body>
@@ -156,32 +156,37 @@
             <div class="cs_gifts_page_gifts_section__h1">
                 <h1 class="typography--header-1">Achieve health, harmony, and inner strength</h1>
             </div>
-            <nav class="cs_gifts_page_gifts_section__nav">
+            <nav id="cs_gifts_page_gifts_section__nav" class="cs_gifts_page_gifts_section__nav">
                 <ul>
                     <li>
                         <h2>
-                            <button class="typography--action-small" data-is-active="1">
+                            <button class="typography--action-small"
+                                onclick="ChristmasShop_GiftCategories.setFilter_byCategoryAndButtonNode('', this)"
+                                data-is-active="1">
                                 All
                             </button>
                         </h2>
                     </li>
                     <li>
                         <h2>
-                            <button class="typography--action-small">
+                            <button class="typography--action-small"
+                                onclick="ChristmasShop_GiftCategories.setFilter_byCategoryAndButtonNode('For Work', this)">
                                 for work
                             </button>
                         </h2>
                     </li>
                     <li>
                         <h2>
-                            <button class="typography--action-small">
+                            <button class="typography--action-small"
+                                onclick="ChristmasShop_GiftCategories.setFilter_byCategoryAndButtonNode('For Health', this)">
                                 for health
                             </button>
                         </h2>
                     </li>
                     <li>
                         <h2>
-                            <button class="typography--action-small">
+                            <button class="typography--action-small"
+                                onclick="ChristmasShop_GiftCategories.setFilter_byCategoryAndButtonNode('For Harmony', this)">
                                 for harmony
                             </button>
                         </h2>

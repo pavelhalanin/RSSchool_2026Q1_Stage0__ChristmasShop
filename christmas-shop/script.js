@@ -236,14 +236,17 @@ class ChristmasShop_GiftModal {
         </div>
       `;
 
-      MODAL_WRAPPER.addEventListener('click', function(event) {
-        if (event.target === MODAL_WRAPPER || event.target.closest('.cs_gift_modal__modal') === null) {
+      MODAL_WRAPPER.addEventListener("click", function (event) {
+        if (
+          event.target === MODAL_WRAPPER ||
+          event.target.closest(".cs_gift_modal__modal") === null
+        ) {
           ChristmasShop_GiftModal.closeModal();
         }
       });
 
       document.body.appendChild(MODAL_WRAPPER);
-      document.querySelector('body').classList.add("cs_header__no_scroll_body");
+      document.querySelector("body").classList.add("cs_header__no_scroll_body");
     } catch (exception) {
       console.error(exception);
       alert(exception);
@@ -252,11 +255,13 @@ class ChristmasShop_GiftModal {
 
   static closeModal() {
     try {
-      console.log(`${new Date().toISOString()} Модалка закрыта`)
+      console.log(`${new Date().toISOString()} Модалка закрыта`);
       document.querySelectorAll(`#${this.id_modal}`).forEach((e) => {
         e.remove();
       });
-      document.querySelector('body').classList.remove("cs_header__no_scroll_body");
+      document
+        .querySelector("body")
+        .classList.remove("cs_header__no_scroll_body");
     } catch (exception) {
       console.error(exception);
       alert(exception);
@@ -274,5 +279,52 @@ class ChristmasShop_GiftModal {
 
     const DATA = await RESPONSE.json();
     return DATA;
+  }
+}
+
+class ChristmasShop_GiftCategories {
+  static setFilter_byCategoryAndButtonNode(category, button_node) {
+    try {
+      const NAV_FILTER = document.getElementById(
+        "cs_gifts_page_gifts_section__nav",
+      );
+
+      const GIFTS = document.getElementById("cs_gifts__gifts_random");
+
+      if (!NAV_FILTER) {
+        console.error("Не найден узел: #cs_gifts_page_gifts_section__nav");
+        return;
+      }
+
+      if (!GIFTS) {
+        console.error("Не найден узел: #cs_gifts__gifts_random");
+        return;
+      }
+
+      if (!button_node) {
+        console.error("Не найден узел: button_node");
+        return;
+      }
+
+      NAV_FILTER.querySelectorAll("button").forEach((button) => {
+        button.removeAttribute("data-is-active");
+      });
+
+      button_node.setAttribute("data-is-active", "1");
+
+      if (category == "") {
+        GIFTS.querySelectorAll("li").forEach((li) => {
+          li.style.display = "block";
+        });
+        return;
+      }
+
+      GIFTS.querySelectorAll("li").forEach((li) => {
+        const CATEGORY = li.getAttribute("data-status");
+        li.style.display = CATEGORY == category ? "block" : "none";
+      });
+    } catch (exception) {
+      console.error(exception);
+    }
   }
 }

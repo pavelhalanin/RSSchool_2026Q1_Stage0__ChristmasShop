@@ -122,8 +122,8 @@
 4. [x] When both opening or refreshing the page, 4 random cards are displayed in the block **Best Gifts** on the `home` page: **+4**
 5. Implementation of the **Category switching** for products on the `gifts` page: **+8**
    - [x] The **ALL** category is active and all 36 gifts are displayed when both opening or reloading the `gifts` page. The order of sorting gifts does not matter: **+2**
-   - [ ] When switching categories, the gifts of the selected category are displayed. The order of sorting gifts does not matter: **+4**
-   - [ ] Only the selected category tab is active: **+2**
+   - [x] When switching categories, the gifts of the selected category are displayed. The order of sorting gifts does not matter: **+4**
+   - [x] Only the selected category tab is active: **+2**
 6. Implementation of the **Scroll-to-Top** button on the `gifts` page: **+12**
    - [ ] The button can only appear at a screen width of 768px and less: **+2**
    - [ ] At the top of the page, the button is not displayed: **+4**
