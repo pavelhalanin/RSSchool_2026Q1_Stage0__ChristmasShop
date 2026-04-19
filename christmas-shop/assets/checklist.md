@@ -116,9 +116,9 @@
    - [ ] The slider is fully scrolled with 3 presses of the arrow button in one direction for screen widths more than 768px, and with 6 presses of the arrow button in one direction for screen widths of 768px and less: **+4**
    - [ ] When the screen width changes, the slider returns to its initial position, and the slider can be fully scrolled with the correct number of the relevant arrow button clicks (it works without reloading the page): **+4**
 3. Implementation of the **Timer** on the `home` page: **+8**
-   - [ ] The timer shows the correct value of the remaining days, hours, minutes, and seconds until the New Year in `UTC+0`: **+2**
-   - [ ] Leading zeros are not displayed for single-digit numbers: **+2**
-   - [ ] The timer updates every second, displaying the current remaining time with the labels `days`, `hours`, `minutes`, `seconds` (the labels must not change): **+4**
+   - [x] The timer shows the correct value of the remaining days, hours, minutes, and seconds until the New Year in `UTC+0`: **+2**
+   - [x] Leading zeros are not displayed for single-digit numbers: **+2**
+   - [x] The timer updates every second, displaying the current remaining time with the labels `days`, `hours`, `minutes`, `seconds` (the labels must not change): **+4**
 4. [x] When both opening or refreshing the page, 4 random cards are displayed in the block **Best Gifts** on the `home` page: **+4**
 5. Implementation of the **Category switching** for products on the `gifts` page: **+8**
    - [x] The **ALL** category is active and all 36 gifts are displayed when both opening or reloading the `gifts` page. The order of sorting gifts does not matter: **+2**

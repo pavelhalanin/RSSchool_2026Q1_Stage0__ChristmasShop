@@ -328,3 +328,112 @@ class ChristmasShop_GiftCategories {
     }
   }
 }
+
+class ChristmasShop_Timer {
+  static id_node_days = "cs_timer__days";
+  static id_node_hours = "cs_timer__hours";
+  static id_node_minutes = "cs_timer__minutes";
+  static id_node_seconds = "cs_timer__seconds";
+
+  static main() {
+    setInterval(() => {
+      ChristmasShop_Timer.updateTimer();
+    }, 1000);
+  }
+
+  static updateTimer() {
+    const DAYS_NODE = document.getElementById(this.id_node_days);
+    const HOURS_NODE = document.getElementById(this.id_node_hours);
+    const MINUTES_NODE = document.getElementById(this.id_node_minutes);
+    const SECONDS_NODE = document.getElementById(this.id_node_seconds);
+
+    if (!DAYS_NODE) {
+      console.error(`Не найден узел: #${this.id_node_days}`);
+      return;
+    }
+
+    if (!HOURS_NODE) {
+      console.error(`Не найден узел: #${this.id_node_hours}`);
+      return;
+    }
+
+    if (!MINUTES_NODE) {
+      console.error(`Не найден узел: #${this.id_node_minutes}`);
+      return;
+    }
+
+    if (!SECONDS_NODE) {
+      console.error(`Не найден узел: #${this.id_node_seconds}`);
+      return;
+    }
+
+    const DATA = this.getTimeUntilNewYearUTC0();
+    DAYS_NODE.innerHTML = DATA.days;
+    HOURS_NODE.innerHTML = DATA.hours;
+    MINUTES_NODE.innerHTML = DATA.minutes;
+    SECONDS_NODE.innerHTML = DATA.seconds;
+  }
+
+  static getTimeUntilNewYearUTC0() {
+    const NOW = new Date();
+
+    const D_NOW = {
+      YYYY: NOW.getUTCFullYear(),
+      MM: NOW.getUTCMonth(),
+      DD: NOW.getUTCDate(),
+      HH: NOW.getUTCHours(),
+      MI: NOW.getUTCMinutes(),
+      SS: NOW.getUTCSeconds(),
+    };
+
+    const UTC_TIMESTAMP_NOW = Date.UTC(
+      D_NOW.YYYY,
+      D_NOW.MM,
+      D_NOW.DD,
+      D_NOW.HH,
+      D_NOW.MI,
+      D_NOW.SS,
+    );
+
+    const D_NEW_YEAR = {
+      YYYY: NOW.getUTCFullYear() + 1,
+      MM: 0,
+      DD: 1,
+      HH: 0,
+      MI: 0,
+      SS: 0,
+    };
+
+    const UTC_TIMESTAMP_NEW_YEAR = Date.UTC(
+      D_NEW_YEAR.YYYY,
+      D_NEW_YEAR.MM,
+      D_NEW_YEAR.DD,
+      D_NEW_YEAR.HH,
+      D_NEW_YEAR.MI,
+      D_NEW_YEAR.SS,
+    );
+
+    const diff = UTC_TIMESTAMP_NEW_YEAR - UTC_TIMESTAMP_NOW;
+
+    if (diff <= 0) {
+      return {
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      };
+    }
+
+    const seconds = Math.floor(diff / 1000) % 60;
+    const minutes = Math.floor(diff / (1000 * 60)) % 60;
+    const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+    return {
+      days,
+      hours,
+      minutes,
+      seconds,
+    };
+  }
+}
