@@ -1416,7 +1416,7 @@ a {
     justify-content: center;
     align-items: center;
 
-    transition: all 3s ease;
+    transition: all 1s ease;
 }
 
 .cs_scroll_button--hidden {
