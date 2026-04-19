@@ -491,6 +491,7 @@ class ChristmasShop_Scroll {
 }
 
 class ChristmasShop_Slider {
+  static id_slider_wrapper = "cs_main_slider_section__slider_wrapper";
   static id_left_button = "cs_main_slider__left_button";
   static id_right_button = "cs_main_slider__right_button";
   static id_long_slider_block = "cs_main_slider__long_slider_block";
@@ -515,11 +516,17 @@ class ChristmasShop_Slider {
   }
 
   static left_or_right(type) {
+    const SLIDER_WRAPPER = document.getElementById(this.id_slider_wrapper);
     const LONG_SLIDER_BLOCK = document.getElementById(
       this.id_long_slider_block,
     );
     const BUTTON_LEFT = document.getElementById(this.id_left_button);
     const BUTTON_RIGHT = document.getElementById(this.id_right_button);
+
+    if (!SLIDER_WRAPPER) {
+      console.error(`Узел не найден: #${this.id_slider_wrapper}`);
+      return;
+    }
 
     if (!LONG_SLIDER_BLOCK) {
       console.error(`Узел не найден: #${this.id_long_slider_block}`);
@@ -548,21 +555,20 @@ class ChristmasShop_Slider {
     }
 
     const MAX_STEP = window.innerWidth > 768 ? 3 : 6;
-    const WINDOW_WIDTH = window.innerWidth;
-
+    const WINDOW_WIDTH = SLIDER_WRAPPER.clientWidth;
     const LONG_BLOCK_WIDTH = LONG_SLIDER_BLOCK.clientWidth;
-    console.log(
-      `translateX(calc(-${LONG_BLOCK_WIDTH}px / ${MAX_STEP} * ${step} - ${WINDOW_WIDTH}px))`,
-    );
-    const PIXEL_RESULT = (-LONG_BLOCK_WIDTH / MAX_STEP) * step + WINDOW_WIDTH;
-    console.log(PIXEL_RESULT);
-    if (PIXEL_RESULT > 0) {
-      LONG_SLIDER_BLOCK.style.transform = `translateX(0)`;
-    } else {
-      console.log(`translateX(${PIXEL_RESULT}px)`);
-      LONG_SLIDER_BLOCK.style.transform = `translateX(${PIXEL_RESULT}px)`;
-    }
-    LONG_SLIDER_BLOCK.setAttribute("data-log-width", `${LONG_BLOCK_WIDTH}`);
+
+    const TRANSLATE_X = (-(LONG_BLOCK_WIDTH - WINDOW_WIDTH) / MAX_STEP) * step;
+
+    console.log({
+      MAX_STEP,
+      step,
+      LONG_BLOCK_WIDTH,
+      WINDOW_WIDTH,
+      TRANSLATE_X,
+    });
+
+    LONG_SLIDER_BLOCK.style.transform = `translateX(${TRANSLATE_X}px)`;
 
     if (step >= MAX_STEP) {
       BUTTON_RIGHT.setAttribute("disabled", "");
