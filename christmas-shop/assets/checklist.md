@@ -109,12 +109,12 @@
    - [x] The page behind the open menu does not scroll: **+2**
    - [x] When the page width increases to more than 768px, the burger icon and the open burger menu hide, and the navigation panel appears: **+2**
 2. Implementation of the **Slider** on the `home` page: **+18**
-   - [ ] Scrolling the slider in the corresponding direction is implemented by pressing left arrow button and right arrow button: **+2**
-   - [ ] The left arrow button is inactive at the far left position of the slider: **+2**
-   - [ ] The right arrow button is inactive at the far right position of the slider: **+2**
-   - [ ] Scrolling the slider is accompanied by the carousel-like animation (the method of animation execution is not evaluated): **+4**
-   - [ ] The slider is fully scrolled with 3 presses of the arrow button in one direction for screen widths more than 768px, and with 6 presses of the arrow button in one direction for screen widths of 768px and less: **+4**
-   - [ ] When the screen width changes, the slider returns to its initial position, and the slider can be fully scrolled with the correct number of the relevant arrow button clicks (it works without reloading the page): **+4**
+   - [x] Scrolling the slider in the corresponding direction is implemented by pressing left arrow button and right arrow button: **+2**
+   - [x] The left arrow button is inactive at the far left position of the slider: **+2**
+   - [x] The right arrow button is inactive at the far right position of the slider: **+2**
+   - [x] Scrolling the slider is accompanied by the carousel-like animation (the method of animation execution is not evaluated): **+4**
+   - [x] The slider is fully scrolled with 3 presses of the arrow button in one direction for screen widths more than 768px, and with 6 presses of the arrow button in one direction for screen widths of 768px and less: **+4**
+   - [x] When the screen width changes, the slider returns to its initial position, and the slider can be fully scrolled with the correct number of the relevant arrow button clicks (it works without reloading the page): **+4**
 3. Implementation of the **Timer** on the `home` page: **+8**
    - [x] The timer shows the correct value of the remaining days, hours, minutes, and seconds until the New Year in `UTC+0`: **+2**
    - [x] Leading zeros are not displayed for single-digit numbers: **+2**

@@ -659,6 +659,9 @@ a {
 
     margin: 0;
     padding: 0;
+
+    transform: translateX(0px);
+    transition: transform 0.8s ease-in-out;
 }
 
 .cs_main_slider_section__slider_wrapper>ul>li {

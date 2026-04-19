@@ -466,18 +466,120 @@ class ChristmasShop_Scroll {
     }
 
     if (window.innerWidth > 768) {
-      console.log("Скрываю кнопку скрола, так как window.innerWidth = ", window.innerWidth, " > 768");
+      console.log(
+        "Скрываю кнопку скрола, так как window.innerWidth = ",
+        window.innerWidth,
+        " > 768",
+      );
       BUTTON.classList.add("cs_scroll_button--hidden");
       return;
     }
 
     if (document.documentElement.scrollTop > 300) {
-      console.log("Показываю кнопку скрола, так прокрутили больше 300 пикселей: document.documentElement.scrollTop = ", document.documentElement.scrollTop, " > 300");
+      console.log(
+        "Показываю кнопку скрола, так прокрутили больше 300 пикселей: document.documentElement.scrollTop = ",
+        document.documentElement.scrollTop,
+        " > 300",
+      );
       BUTTON.classList.remove("cs_scroll_button--hidden");
       return;
     }
 
     console.log("Скрываю кнопку скрола");
     BUTTON.classList.add("cs_scroll_button--hidden");
+  }
+}
+
+class ChristmasShop_Slider {
+  static id_left_button = "cs_main_slider__left_button";
+  static id_right_button = "cs_main_slider__right_button";
+  static id_long_slider_block = "cs_main_slider__long_slider_block";
+
+  static main() {
+    window.addEventListener("resize", ChristmasShop_Slider.resetSlider);
+  }
+
+  static resetSlider(event) {
+    const LONG_SLIDER_BLOCK = document.getElementById(
+      ChristmasShop_Slider.id_long_slider_block,
+    );
+    if (!LONG_SLIDER_BLOCK) {
+      console.error(
+        `Узел не найден: #${ChristmasShop_Slider.id_long_slider_block}`,
+      );
+      return;
+    }
+
+    LONG_SLIDER_BLOCK.setAttribute("data-step", `0`);
+    ChristmasShop_Slider.left_or_right("left");
+  }
+
+  static left_or_right(type) {
+    const LONG_SLIDER_BLOCK = document.getElementById(
+      this.id_long_slider_block,
+    );
+    const BUTTON_LEFT = document.getElementById(this.id_left_button);
+    const BUTTON_RIGHT = document.getElementById(this.id_right_button);
+
+    if (!LONG_SLIDER_BLOCK) {
+      console.error(`Узел не найден: #${this.id_long_slider_block}`);
+      return;
+    }
+
+    if (!BUTTON_LEFT) {
+      console.error(`Узел не найден: #${this.id_left_button}`);
+      return;
+    }
+
+    if (!BUTTON_RIGHT) {
+      console.error(`Узел не найден: #${this.id_right_button}`);
+      return;
+    }
+
+    let step = Number(LONG_SLIDER_BLOCK.getAttribute("data-step"));
+    if (type == "right") {
+      step += 1;
+    } else {
+      step -= 1;
+    }
+
+    if (step <= 0) {
+      step = 0;
+    }
+
+    const MAX_STEP = window.innerWidth > 768 ? 3 : 6;
+    const WINDOW_WIDTH = window.innerWidth;
+
+    const LONG_BLOCK_WIDTH = LONG_SLIDER_BLOCK.clientWidth;
+    console.log(
+      `translateX(calc(-${LONG_BLOCK_WIDTH}px / ${MAX_STEP} * ${step} - ${WINDOW_WIDTH}px))`,
+    );
+    const PIXEL_RESULT = (-LONG_BLOCK_WIDTH / MAX_STEP) * step + WINDOW_WIDTH;
+    console.log(PIXEL_RESULT);
+    if (PIXEL_RESULT > 0) {
+      LONG_SLIDER_BLOCK.style.transform = `translateX(0)`;
+    } else {
+      console.log(`translateX(${PIXEL_RESULT}px)`);
+      LONG_SLIDER_BLOCK.style.transform = `translateX(${PIXEL_RESULT}px)`;
+    }
+    LONG_SLIDER_BLOCK.setAttribute("data-log-width", `${LONG_BLOCK_WIDTH}`);
+
+    if (step >= MAX_STEP) {
+      BUTTON_RIGHT.setAttribute("disabled", "");
+      BUTTON_LEFT.removeAttribute("disabled");
+      LONG_SLIDER_BLOCK.setAttribute("data-step", `${MAX_STEP}`);
+      return;
+    }
+
+    if (step <= 0) {
+      BUTTON_RIGHT.removeAttribute("disabled");
+      BUTTON_LEFT.setAttribute("disabled", "");
+      LONG_SLIDER_BLOCK.setAttribute("data-step", "0");
+      return;
+    }
+
+    BUTTON_RIGHT.removeAttribute("disabled");
+    BUTTON_LEFT.removeAttribute("disabled");
+    LONG_SLIDER_BLOCK.setAttribute("data-step", `${step}`);
   }
 }
