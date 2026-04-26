@@ -83,7 +83,7 @@ class ChristmasShop_BestGifts {
 
   static async fetchGifts() {
     const URL_ =
-      "/pavelhalanin-JSFEPRESCHOOL2026Q1/christmas-shop/api/gifts.json";
+      "/RSSchool_2026Q1_Stage0__ChristmasShop/christmas-shop/api/gifts.json";
     const RESPONSE = await fetch(URL_);
     const HTTP_STATUS = RESPONSE.status;
     if (HTTP_STATUS != 200) {
@@ -146,7 +146,7 @@ class ChristmasShop_Gifts {
 
   static async fetchGifts() {
     const URL_ =
-      "/pavelhalanin-JSFEPRESCHOOL2026Q1/christmas-shop/api/gifts.json";
+      "/RSSchool_2026Q1_Stage0__ChristmasShop/christmas-shop/api/gifts.json";
     const RESPONSE = await fetch(URL_);
     const HTTP_STATUS = RESPONSE.status;
     if (HTTP_STATUS != 200) {
@@ -271,7 +271,7 @@ class ChristmasShop_GiftModal {
   }
 
   static async fetchGift_byIdGift(id_gift) {
-    const URL_ = `/pavelhalanin-JSFEPRESCHOOL2026Q1/christmas-shop/api/gifts/${id_gift}.json`;
+    const URL_ = `/RSSchool_2026Q1_Stage0__ChristmasShop/christmas-shop/api/gifts/${id_gift}.json`;
     const RESPONSE = await fetch(URL_);
     const HTTP_STATUS = RESPONSE.status;
     if (HTTP_STATUS != 200) {
