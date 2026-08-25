@@ -50,6 +50,6 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "start_url": "https://rolling-scopes-school.github.io/RSSchool_2026Q1_Stage0__ChristmasShop/",
+    "start_url": "/RSSchool_2026Q1_Stage0__ChristmasShop/",
     "display": "standalone"
 }
